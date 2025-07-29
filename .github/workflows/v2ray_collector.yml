@@ -1,4 +1,4 @@
-name: V2Ray Config Collector
+name: V2Ray Config Collector2
 
 on:
   schedule:
