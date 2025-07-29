@@ -26,7 +26,7 @@ jobs:
           XRAY_VERSION="1.8.6" # You can change this to a newer version if available
           XRAY_URL="https://github.com/XTLS/Xray-core/releases/download/v${XRAY_VERSION}/Xray-linux-64.zip"
           curl -L -o xray.zip ${XRAY_URL}
-          unzip xray.zip # Unzip all contents
+          unzip -o xray.zip # Unzip all contents, overwriting existing files without prompting
           # Find the xray executable, it might be directly named 'xray' or 'Xray' or within a directory
           # We'll use 'find' to locate it reliably
           XRAY_EXECUTABLE=$(find . -type f -name "xray*" -perm /u+x | head -n 1) # Find executable named xray or Xray
