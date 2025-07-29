@@ -38,18 +38,6 @@ python v2ray_collector.py
 
 The script will create a directory named `v2ray_configs` in the same directory where the script is located. Inside this directory, it will create a single file for each protocol (`vmess.txt`, `vless.txt`, etc.). Each file contains all of the collected configs for that protocol, joined together by newlines. A `subscription.txt` file will also be generated containing a Base64 encoded V2Ray subscription link of all collected configs.
 
-## Automation with GitHub Actions
-
-This repository contains a GitHub Actions workflow to automatically run the script every hour and commit the updated configs.
-
-To use it, simply push the `.github/workflows/v2ray_collector.yml` file to your GitHub repository. The action will be enabled and will start running on the defined schedule. You can also trigger it manually from the "Actions" tab in your repository.
-
-## Raw Config File URLs
-
-Here are the direct raw URLs to the generated config files. You can use these links in V2Ray clients that support importing from a URL.
-
-**Note:** Replace `<YOUR_USERNAME>`, `<YOUR_REPOSITORY>`, and `<BRANCH_NAME>` with your actual GitHub username, repository name, and branch name (e.g., `main` or `master`).
-
 *   **All Protocols (Subscription Link):** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/subscription.txt`
 *   **Vmess:** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/vmess.txt`
 *   **Vless:** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/vless.txt`
