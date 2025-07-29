@@ -123,11 +123,11 @@ def main():
             print(f"Testing config {i+1}/{len(unique_configs)}: {config[:50]}...") # Show first 50 chars
             # For now, we are skipping actual testing as test_v2ray_config is a placeholder
             # Once test_v2ray_config is fully implemented and reliable, uncomment the if condition
-            # if test_v2ray_config(config):
-            working_configs.append(config)
-            print(f"Config {i+1} is (assumed) working.")
-            # else:
-            #     print(f"Config {i+1} is NOT working.")
+            if test_v2ray_config(config):
+                working_configs.append(config)
+                print(f"Config {i+1} is (assumed) working.")
+            else:
+                 print(f"Config {i+1} is NOT working.")
 
         print(f"\nFound {len(working_configs)} working V2Ray configs.")
         save_configs_to_files(working_configs)
