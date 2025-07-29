@@ -1,4 +1,4 @@
-name: V2Ray Config Collector
+name: V2Ray Config Collector2
 
 on:
   schedule:
@@ -20,22 +20,6 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10' # Ensure this matches your local environment if needed
-
-      - name: Download Xray
-        run: |
-          XRAY_VERSION="1.8.6" # You can change this to a newer version if available
-          XRAY_URL="https://github.com/XTLS/Xray-core/releases/download/v${XRAY_VERSION}/Xray-linux-64.zip"
-          curl -L -o xray.zip ${XRAY_URL}
-          unzip -o xray.zip # Unzip all contents, overwriting existing files without prompting
-          # Find the xray executable, it might be directly named 'xray' or 'Xray' or within a directory
-          # We'll use 'find' to locate it reliably
-          XRAY_EXECUTABLE=$(find . -type f -name "xray*" -perm /u+x | head -n 1) # Find executable named xray or Xray
-          if [ -z "$XRAY_EXECUTABLE" ]; then
-            echo "Error: xray executable not found after unzipping."
-            exit 1
-          fi
-          chmod +x "$XRAY_EXECUTABLE"
-          sudo mv "$XRAY_EXECUTABLE" /usr/local/bin/xray # Move to a directory in PATH
 
       - name: Install dependencies
         run: |
