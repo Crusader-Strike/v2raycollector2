@@ -1,0 +1,47 @@
+name: V2Ray Config Collector
+
+on:
+  schedule:
+    # Runs every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Grant write permissions to the workflow
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' # Ensure this matches your local environment if needed
+
+      - name: Download Xray
+        run: |
+          XRAY_VERSION="1.8.6" # You can change this to a newer version if available
+          XRAY_URL="https://github.com/XTLS/Xray-core/releases/download/v${XRAY_VERSION}/Xray-linux-64.zip"
+          curl -L -o xray.zip ${XRAY_URL}
+          unzip xray.zip xray Xray-linux-64/xray
+          chmod +x xray
+          sudo mv xray /usr/local/bin/xray # Move to a directory in PATH
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run V2Ray Collector
+        run: python v2ray_collector.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull origin main # Pull latest changes
+          git add -f v2ray_configs/
+          git diff --staged --quiet || (git commit -m "Update V2Ray configs" && git push)
