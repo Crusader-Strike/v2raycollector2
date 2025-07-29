@@ -1,4 +1,4 @@
-name: V2Ray Config Collector2
+name: V2Ray Config Collector
 
 on:
   schedule:
@@ -26,9 +26,16 @@ jobs:
           XRAY_VERSION="1.8.6" # You can change this to a newer version if available
           XRAY_URL="https://github.com/XTLS/Xray-core/releases/download/v${XRAY_VERSION}/Xray-linux-64.zip"
           curl -L -o xray.zip ${XRAY_URL}
-          unzip xray.zip xray Xray-linux-64/xray
-          chmod +x xray
-          sudo mv xray /usr/local/bin/xray # Move to a directory in PATH
+          unzip xray.zip # Unzip all contents
+          # Find the xray executable, it might be directly named 'xray' or 'Xray' or within a directory
+          # We'll use 'find' to locate it reliably
+          XRAY_EXECUTABLE=$(find . -type f -name "xray*" -perm /u+x | head -n 1) # Find executable named xray or Xray
+          if [ -z "$XRAY_EXECUTABLE" ]; then
+            echo "Error: xray executable not found after unzipping."
+            exit 1
+          fi
+          chmod +x "$XRAY_EXECUTABLE"
+          sudo mv "$XRAY_EXECUTABLE" /usr/local/bin/xray # Move to a directory in PATH
 
       - name: Install dependencies
         run: |
