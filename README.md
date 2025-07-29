@@ -43,3 +43,16 @@ The script will create a directory named `v2ray_configs` in the same directory w
 This repository contains a GitHub Actions workflow to automatically run the script every hour and commit the updated configs.
 
 To use it, simply push the `.github/workflows/v2ray_collector.yml` file to your GitHub repository. The action will be enabled and will start running on the defined schedule. You can also trigger it manually from the "Actions" tab in your repository.
+
+## Raw Config File URLs
+
+Here are the direct raw URLs to the generated config files. You can use these links in V2Ray clients that support importing from a URL.
+
+**Note:** Replace `<YOUR_USERNAME>`, `<YOUR_REPOSITORY>`, and `<BRANCH_NAME>` with your actual GitHub username, repository name, and branch name (e.g., `main` or `master`).
+
+*   **All Protocols (Subscription Link):** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/subscription.txt`
+*   **Vmess:** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/vmess.txt`
+*   **Vless:** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/vless.txt`
+*   **Trojan:** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/trojan.txt`
+*   **Shadowsocks (ss):** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/ss.txt`
+*   **Hysteria (hysteria, hysteria2, hy2):** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/hysteria.txt`
