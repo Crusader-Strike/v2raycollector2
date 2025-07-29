@@ -38,9 +38,9 @@ python v2ray_collector.py
 
 The script will create a directory named `v2ray_configs` in the same directory where the script is located. Inside this directory, it will create a single file for each protocol (`vmess.txt`, `vless.txt`, etc.). Each file contains all of the collected configs for that protocol, joined together by newlines. A `subscription.txt` file will also be generated containing a Base64 encoded V2Ray subscription link of all collected configs.
 
-*   **All Protocols (Subscription Link):** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/subscription.txt`
-*   **Vmess:** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/vmess.txt`
-*   **Vless:** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/vless.txt`
-*   **Trojan:** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/trojan.txt`
-*   **Shadowsocks (ss):** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/ss.txt`
-*   **Hysteria (hysteria, hysteria2, hy2):** `https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/hysteria.txt`
+*   **All Protocols (Subscription Link):** ```https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/subscription.txt```
+*   **Vmess:** ```https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/vmess.txt```
+*   **Vless:** ```https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/vless.txt```
+*   **Trojan:** ```https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/trojan.txt```
+*   **Shadowsocks (ss):** ```https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/ss.txt```
+*   **Hysteria (hysteria, hysteria2, hy2):** ```https://raw.githubusercontent.com/Crusader-Strike/v2raycollector2/refs/heads/main/v2ray_configs/hysteria.txt```
