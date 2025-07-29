@@ -180,7 +180,7 @@ def test_v2ray_config(config_link, timeout=5):
                                     "users": [
                                         {
                                             "id": config_data["id"],
-                                            "alterId": int(config_data["aid"]),
+                                            "alterId": int(config_data.get("aid", 0)), # Use .get with default for 'aid'
                                             "level": 0,
                                             "security": "auto"
                                         }
@@ -259,7 +259,12 @@ def test_v2ray_config(config_link, timeout=5):
         # Start Xray process
         # We need to ensure 'xray' executable is in PATH
         xray_command = ["xray", "-c", temp_config_file]
-        xray_process = subprocess.Popen(xray_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        try:
+            xray_process = subprocess.Popen(xray_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        except FileNotFoundError:
+            print(f"Error: 'xray' executable not found. Please ensure Xray is installed and in your system's PATH. "
+                  f"For local execution, download from https://github.com/XTLS/Xray-core/releases and add to PATH.")
+            return False
         
         time.sleep(1) # Give Xray some time to start
 
