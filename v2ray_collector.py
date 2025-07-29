@@ -121,13 +121,11 @@ def main():
         working_configs = []
         for i, config in enumerate(unique_configs):
             print(f"Testing config {i+1}/{len(unique_configs)}: {config[:50]}...") # Show first 50 chars
-            # For now, we are skipping actual testing as test_v2ray_config is a placeholder
-            # Once test_v2ray_config is fully implemented and reliable, uncomment the if condition
             if test_v2ray_config(config):
                 working_configs.append(config)
-                print(f"Config {i+1} is (assumed) working.")
+                print(f"Config {i+1} is working.")
             else:
-                 print(f"Config {i+1} is NOT working.")
+                print(f"Config {i+1} is NOT working.")
 
         print(f"\nFound {len(working_configs)} working V2Ray configs.")
         save_configs_to_files(working_configs)
@@ -212,22 +210,79 @@ def test_v2ray_config(config_link, timeout=5):
                 }
             }
 
-        elif config_link.startswith(("vless://", "ss://", "trojan://", "hysteria://", "hy2://")):
-            # For other protocols, Xray can often directly use the link in an outbound
-            # This is a simplified approach; more complex parsing might be needed for full features
+        elif config_link.startswith("vless://"):
+            parsed_url = urllib.parse.urlparse(config_link)
+            user_info = parsed_url.netloc.split('@')
+            uuid = user_info[0]
+            address_port = user_info[1].split(':')
+            address = address_port[0]
+            port = int(address_port[1])
+
+            query_params = urllib.parse.parse_qs(parsed_url.query)
+            # Common Vless stream settings
+            network = query_params.get("type", ["tcp"])[0]
+            security = query_params.get("security", ["none"])[0]
+            flow = query_params.get("flow", [""])[0]
+            
+            # TLS settings
+            tls_settings = {}
+            if security == "tls":
+                tls_settings["serverName"] = query_params.get("sni", [address])[0]
+                tls_settings["allowInsecure"] = query_params.get("allowInsecure", ["0"])[0] == "1"
+                tls_settings["alpn"] = query_params.get("alpn", [""])[0].split(',') if query_params.get("alpn") else []
+                tls_settings["fingerprint"] = query_params.get("fp", [""])[0]
+            elif security == "reality":
+                tls_settings["serverName"] = query_params.get("sni", [address])[0]
+                tls_settings["fingerprint"] = query_params.get("fp", [""])[0]
+                tls_settings["publicKey"] = query_params.get("pbk", [""])[0]
+                tls_settings["shortId"] = query_params.get("sid", [""])[0]
+                tls_settings["spiderX"] = query_params.get("spx", [""])[0]
+
+            # Stream settings based on network type
+            stream_settings = {
+                "network": network,
+                "security": security,
+                "tlsSettings": tls_settings
+            }
+            if network == "ws":
+                stream_settings["wsSettings"] = {
+                    "path": query_params.get("path", ["/"])[0],
+                    "headers": {"Host": query_params.get("host", [""])[0]}
+                }
+            elif network == "grpc":
+                stream_settings["grpcSettings"] = {
+                    "serviceName": query_params.get("serviceName", [""])[0],
+                    "multiMode": query_params.get("mode", ["gun"])[0] == "multi"
+                }
+            
             xray_client_config = {
                 "log": {"loglevel": "warning"},
                 "inbounds": [
                     {
-                        "port": 1080,
+                        "port": 1080, # Local SOCKS5 proxy port
                         "protocol": "socks",
                         "settings": {"auth": "noauth"}
                     }
                 ],
                 "outbounds": [
                     {
-                        "protocol": "freedom", # Placeholder, Xray should handle the link directly
-                        "settings": {},
+                        "protocol": "vless",
+                        "settings": {
+                            "vnext": [
+                                {
+                                    "address": address,
+                                    "port": port,
+                                    "users": [
+                                        {
+                                            "id": uuid,
+                                            "encryption": "none",
+                                            "flow": flow
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "streamSettings": stream_settings,
                         "tag": "proxy"
                     },
                     {"protocol": "freedom", "tag": "direct"}
@@ -238,15 +293,171 @@ def test_v2ray_config(config_link, timeout=5):
                     ]
                 }
             }
-            # This is a very simplified way to pass the link.
-            # A proper implementation would parse the link and construct the outbound based on its components.
-            # For now, we'll try to pass it as a URL.
-            # Xray's `freedom` protocol with `domainStrategy` could potentially handle this.
-            # However, for testing, it's better to build a proper outbound.
-            # This requires more complex parsing for each protocol type.
-            print(f"Warning: Direct testing for {config_link.split('://')[0]} is simplified. Full parsing needed.")
-            return False # For now, we'll only properly test vmess
 
+        elif config_link.startswith("ss://"):
+            parsed_url = urllib.parse.urlparse(config_link)
+            
+            # The user info part is base64 encoded
+            decoded_user_info = base64.b64decode(parsed_url.netloc).decode('utf-8')
+            method, password = decoded_user_info.split(':')
+            
+            address = parsed_url.hostname
+            port = parsed_url.port
+            
+            xray_client_config = {
+                "log": {"loglevel": "warning"},
+                "inbounds": [
+                    {
+                        "port": 1080, # Local SOCKS5 proxy port
+                        "protocol": "socks",
+                        "settings": {"auth": "noauth"}
+                    }
+                ],
+                "outbounds": [
+                    {
+                        "protocol": "shadowsocks",
+                        "settings": {
+                            "servers": [
+                                {
+                                    "address": address,
+                                    "port": port,
+                                    "method": method,
+                                    "password": password
+                                }
+                            ]
+                        },
+                        "tag": "proxy"
+                    },
+                    {"protocol": "freedom", "tag": "direct"}
+                ],
+                "routing": {
+                    "rules": [
+                        {"type": "field", "outboundTag": "proxy", "port": 1080}
+                    ]
+                }
+            }
+        elif config_link.startswith("trojan://"):
+            parsed_url = urllib.parse.urlparse(config_link)
+            
+            user_info = parsed_url.netloc.split('@')
+            password = user_info[0]
+            address_port = user_info[1].split(':')
+            address = address_port[0]
+            port = int(address_port[1])
+
+            query_params = urllib.parse.parse_qs(parsed_url.query)
+            # Common Trojan stream settings
+            security = query_params.get("security", ["tls"])[0]
+            sni = query_params.get("sni", [address])[0]
+
+            xray_client_config = {
+                "log": {"loglevel": "warning"},
+                "inbounds": [
+                    {
+                        "port": 1080, # Local SOCKS5 proxy port
+                        "protocol": "socks",
+                        "settings": {"auth": "noauth"}
+                    }
+                ],
+                "outbounds": [
+                    {
+                        "protocol": "trojan",
+                        "settings": {
+                            "servers": [
+                                {
+                                    "address": address,
+                                    "port": port,
+                                    "password": password
+                                }
+                            ]
+                        },
+                        "streamSettings": {
+                            "security": security,
+                            "tlsSettings": {"serverName": sni}
+                        },
+                        "tag": "proxy"
+                    },
+                    {"protocol": "freedom", "tag": "direct"}
+                ],
+                "routing": {
+                    "rules": [
+                        {"type": "field", "outboundTag": "proxy", "port": 1080}
+                    ]
+                }
+            }
+        elif config_link.startswith(("hysteria://", "hy2://")):
+            parsed_url = urllib.parse.urlparse(config_link)
+            
+            # Hysteria and Hy2 have different URL structures
+            if config_link.startswith("hysteria://"):
+                protocol = "hysteria"
+                address = parsed_url.hostname
+                port = parsed_url.port
+                query_params = urllib.parse.parse_qs(parsed_url.query)
+                auth = query_params.get("auth", [""])[0]
+                up_mbps = int(query_params.get("upmbps", [10])[0])
+                down_mbps = int(query_params.get("downmbps", [50])[0])
+                
+                # Simplified Hysteria config
+                xray_client_config = {
+                    "log": {"loglevel": "warning"},
+                    "inbounds": [{"port": 1080, "protocol": "socks", "settings": {"auth": "noauth"}}],
+                    "outbounds": [
+                        {
+                            "protocol": "hysteria",
+                            "settings": {
+                                "servers": [
+                                    {
+                                        "address": address,
+                                        "port": port,
+                                        "auth": auth,
+                                        "up_mbps": up_mbps,
+                                        "down_mbps": down_mbps
+                                    }
+                                ]
+                            },
+                            "tag": "proxy"
+                        },
+                        {"protocol": "freedom", "tag": "direct"}
+                    ],
+                    "routing": {"rules": [{"type": "field", "outboundTag": "proxy", "port": 1080}]}
+                }
+            
+            elif config_link.startswith("hy2://"):
+                protocol = "hysteria2"
+                user_info = parsed_url.netloc.split('@')
+                password = user_info[0]
+                address_port = user_info[1].split(':')
+                address = address_port[0]
+                port = int(address_port[1])
+                query_params = urllib.parse.parse_qs(parsed_url.query)
+                sni = query_params.get("sni", [address])[0]
+
+                xray_client_config = {
+                    "log": {"loglevel": "warning"},
+                    "inbounds": [{"port": 1080, "protocol": "socks", "settings": {"auth": "noauth"}}],
+                    "outbounds": [
+                        {
+                            "protocol": "hysteria2",
+                            "settings": {
+                                "servers": [
+                                    {
+                                        "address": address,
+                                        "port": port,
+                                        "password": password
+                                    }
+                                ]
+                            },
+                            "streamSettings": {
+                                "security": "tls",
+                                "tlsSettings": {"serverName": sni}
+                            },
+                            "tag": "proxy"
+                        },
+                        {"protocol": "freedom", "tag": "direct"}
+                    ],
+                    "routing": {"rules": [{"type": "field", "outboundTag": "proxy", "port": 1080}]}
+                }
         else:
             print(f"Unsupported protocol for testing: {config_link}")
             return False
