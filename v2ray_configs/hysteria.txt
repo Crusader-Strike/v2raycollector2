@@ -16,3 +16,4 @@ hysteria2://dongtaiwang.com@46.17.41.189:50717?security=tls&insecure=1&sni=www.b
 hysteria2://dongtaiwang.com@51.159.111.32:31180?security=tls&insecure=1&sni=apple.com#FR 2 🇫🇷 | @v2xay
 hysteria2://f8e40931bbb827df@62.60.231.189:12123?security=tls&obfs=salamander&obfs-password=dbc688df29e582d3&insecure=1&sni=www.google.com#%40V2rayNG3
 hysteria2://nG8WL2HVYqARhg2XqxKPsARekSU@18.141.229.199:7431?security=tls&insecure=1#%F0%9F%87%AE%F0%9F%87%B3telegram%20%E2%9E%A0%20%40v2rayNG_Matsuri
+hysteria2://wl4HYN9PPKs8d8IzGIt4yKqt0@47.74.34.102:53348?insecure=1#Telegram:@config_proxy 😍
