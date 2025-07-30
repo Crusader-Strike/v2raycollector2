@@ -1,5 +1,4 @@
 hy2://1c473b13-502d-47eb-8cf8-70a38d56c5bd@jp1.interld123456789.com:443/?mport=36000-37000&insecure=1&sni=1231231.1234567890spcloud.com#%E6%97%A5%E6%9C%ACHy2-3
-hy2://a18b26c8-6634-4238-8ccb-34e777e1277b@45.136.245.177:33079/?insecure=1&obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ%3D%3D#Telegram:@config_proxy 😍
 hy2://e10ea0d5-4244-4aec-9ba0-cafe77cc6d90@aws-linkhy10.liangxin1.xyz:443/?mport=30000-50000&insecure=1&sni=www.teslaautomation.de#%F0%9F%87%B8%F0%9F%87%AC%E6%96%B0%E5%8A%A0%E5%9D%A1
 hysteria2://%40azadi_az_inja_migzare@all-v4.dgi000.store:443?security=tls&obfs=salamander&obfs-password=%40azadi_az_inja_migzare&insecure=0&sni=all-v4.dgi000.store#%40V2rayNG3
 hysteria2://123456@192.3.85.237:443?security=tls&insecure=1&sni=bing.com#%40V2rayNG3
