@@ -10,8 +10,9 @@ trojan://74260628090146500@stirring-parakeet.shiner427.skin:443/?type=tcp&securi
 trojan://AXpQXM4vNh@141.227.160.167:1935?security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&headerType=none&type=tcp&sni=x2swe-ovh.devefun.net#@V2rayNG3
 trojan://Aimer@103.116.7.133:2083?path=%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw&security=tls&host=epmk.ambercc.filegear-sg.me&type=ws&sni=epmk.ambercc.filegear-sg.me#%F0%9F%92%AFT.me%2FAsak_Vpn%F0%9F%92%AF
 trojan://FiSo7J6vfS@51.68.13.106:1935?security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&headerType=none&type=tcp&sni=x1fr-ovh.devefun.net#@V2rayNG3
-trojan://NISHIKUITAN111@146.19.21.61:443?allowInsecure=1&ws=1&wspath=%2F#t.me/entryNET/config=1839133835762305
+trojan://NISHIKUITAN111@104.24.54.196:443?allowInsecure=1&ws=1&wspath=%2F#t.me/entryNET/config=1839142390866705
 trojan://NISHIKUITAN111@172.64.156.42:443?allowInsecure=1&ws=1&wspath=%2F#t.me/entryNET/config=1839137546630571
+trojan://NISHIKUITAN111@198.41.192.95:443?allowInsecure=1&ws=1&wspath=%2F#t.me/entryNET/config=1839141321410872
 trojan://Pooria@104.17.148.22:443?path=%2FtrPyOrWMfkHd15oxiI%3Fed%3D1520%23FreeV2Alpha&security=tls&alpn=h2%2Chttp%2F1.1&host=301.pooriam.ir&fp=randomized&type=ws&sni=301.pOORiAm.ir#%40V2rayNG3
 trojan://Pooria@104.17.148.22:443?path=%2FtrPyOrWMfkHd15oxiI%3Fed%3D1520&security=tls&alpn=h2%2Chttp%2F1.1&host=301.pooriam.ir&fp=randomized&type=ws&sni=301.pOORiAm.ir#%40V2rayNG3
 trojan://Pooria@104.17.148.22:443?path=trPyOrWMfkHd15oxiI%3Fed%3D1520%23%40v2ray_alpha&security=tls&alpn=h2%2Chttp%2F1.1&host=301.pooriam.ir&fp=randomized&type=ws&sni=301.pOORiAm.ir#%40V2rayNG3
@@ -30,7 +31,6 @@ trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2FStupid-
 trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2FStupid-World%2F103.106.228.126-2053&security=tls&host=vpn.stupidworld.web.id&fp=chrome&type=ws&sni=vpn.stupidworld.web.id#JP%20%F0%9F%87%AF%F0%9F%87%B5%20%7C%20%40v2xay
 trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2FTel-%40V2ray_Alpha&security=tls&host=vpn.stupidworld.web.id&fp=chrome&type=ws&sni=vpn.stupidworld.web.id#%40Daily_Configs
 trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2FTel---@HiByeVPNN&security=tls&host=vpn.stupidworld.web.id&fp=chrome&type=ws&sni=vpn.stupidworld.web.id#@HiByeVPNN
-trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?security=tls&sni=vpn.stupidworld.web.id&fp=chrome&type=ws&host=vpn.stupidworld.web.id&path=%2FStupid-World%2F103.106.228.126-2053#Telegram:@config_proxy 💦
 trojan://hZ7JkYVAfB@141.227.138.29:1935?security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&headerType=none&type=tcp&sni=x1ch-ovh.devefun.net#@V2rayNG3
 trojan://mZMgM1vKw5@85.255.9.247:1935?security=tls&headerType=none&type=tcp&sni=x1-czech-aruba-v2.devefun.org#⚜️Telegram: @IP_CF
 trojan://redfree8@104.17.148.22:80?path=%2FtrLwW5jwrnymnOdqki%3Fed%3D2560&security=none&host=redfree8-p1.pooriashop.ir&type=ws#@CaV2ray ⚡️
@@ -73,4 +73,3 @@ trojan://tunnel-astro@pl-1.stunnel.cc:8441?path=AstroVPN_Official-AstroVPN_Offic
 trojan://tunnel-astrovpn_official@fr-2.stunnel.cc:8441?path=AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official&security=tls&alpn=http%2F1.1&host=fr-2.stunnel.cc&headerType=none&type=tcp&sni=Zula.ir.AstroVPN-official.AstroVPN-official.workers.dev#AstroVPN_Official🇫🇷(ALL)
 trojan://tunnel-astrovpn_official_de@de-1.stunnel.cc:8441?path=AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official&security=tls&alpn=http%2F1.1&host=de-1.stunnel.cc&headerType=none&type=tcp&sni=zula.ir.AstroVPN-official.AstroVPN-official.workers.dev#AstroVPN_Official🇩🇪(ALL)
 trojan://utF6JLQd2x@141.227.128.69:1935?security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&headerType=none&type=tcp&sni=x1es-ovh.devefun.net#@V2rayNG3
-trojan://wb6368@92.243.75.49:2087/?type=tcp&security=tls&sni=hsdgbuys.pages.dev&allowInsecure=1#t.me/entryNET/config=1839135412249068
