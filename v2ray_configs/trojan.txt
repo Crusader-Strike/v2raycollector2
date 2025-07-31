@@ -1,7 +1,6 @@
 trojan://0F22D008-24D4-4DFE-947B-8D2FD64CD24C@www.visa.com.sg:2053/?type=ws&host=t.hongkong6.qzz.io&path=%2F%3Fed%3D2560&security=tls&sni=t.hongkong6.qzz.io&fp=random#Trojan
 trojan://13253e6e-a1f7-4090-801f-a8dc2b083bef@104.17.148.22:8443?path=%2Ftrwidp0ENHXMUNX4bA%2Fc2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ&security=tls&alpn=http%2F1.1&host=invincible.fafa20.shop&fp=randomized&type=ws&sni=inVinciBLe.fafa20.sHop#IP%20%D9%85%D8%AA%D8%AD%D8%B1%DA%A9%20%7C%20%40v2xay
 trojan://1CvlKYj1aU@x1-sweden-linode-v2-71u92.devefun.org:1935?security=tls&headerType=none&type=tcp#SE 🇸🇪 | @v2xay
-trojan://1CvlKYj1aU@x1-sweden-linode-v2-71u92.devefun.org:1935?security=tls&headerType=none&type=tcp#t.me/entryNET/config=1839106844432901
 trojan://3aIMXgxQ3F@x1-germany-linode-v2-jk001.devefun.org:1935/?type=tcp&security=tls&sni=x1-germany-linode-v2-jk001.devefun.org#t.me/entryNET/config=1839107347707878
 trojan://3aIMXgxQ3F@x1-germany-linode-v2-jk001.devefun.org:1935?security=tls&headerType=none&type=tcp#DE%205%20%F0%9F%87%A9%F0%9F%87%AA%20%7C%20%40v2xay
 trojan://5a5d1112-4ae7-431f-bdde-0d008fb473dd@172.67.207.27:443?path=%2F685uFbiRrgAsHzTP8d&security=tls&alpn=http%2F1.1&host=90.taipei108.dpdns.org&fp=chrome&type=ws&sni=90.tAIpEI108.dpDnS.orG#@CaV2ray ⚡️
@@ -18,7 +17,6 @@ trojan://ZU%290ryc%24VSrG@104.17.148.22:443?path=%2Ftrg2dhGAnG15ULOP7i%3Fed%3D25
 trojan://amclubs@103.160.204.1:443?path=%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560&security=tls&host=tran.amclubstest.nyc.mn&type=ws&sni=tran.amclubstest.nyc.mn#@V2rayNG3
 trojan://bpb-trojan@104.26.4.60:443?path=%2Ftr%3Fed%3D2560&security=tls&host=zamim340.ggff.net&type=ws&sni=zamim340.ggff.net#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig
 trojan://d0d08cddacc3190ea81b1b792e1b5fde@174.138.85.53:443?security=tls&headerType=none&type=tcp&sni=www.baidu.com#US 🇺🇲 | @v2xay
-trojan://d0d08cddacc3190ea81b1b792e1b5fde@174.138.85.53:443?security=tls&headerType=none&type=tcp&sni=www.baidu.com#t.me/entryNET/config=1839106907884180
 trojan://da86c6b5-a130-4bb8-a6ef-00b77b85b9e7@94.131.122.157:8443?mode=gun&security=tls&type=grpc&serviceName=grpc&sni=uk2.safecdn.site#%40V2rayNG3
 trojan://eG92F3gh09@51.15.86.181:1935?security=tls&headerType=none&type=tcp&sni=x1ams-scaleway.devefun.net#@V2rayNG3
 trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2FStupid-World%2F103.106.228.126-2053&security=tls&host=vpn.stupidworld.web.id&fp=chrome&type=ws&sni=vpn.stupidworld.web.id#%40Configology%F0%9F%95%8A2
