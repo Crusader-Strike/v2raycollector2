@@ -4,7 +4,6 @@ hysteria2://%40azadi_az_inja_migzare@all-v4.dgi000.store:443?security=tls&obfs=s
 hysteria2://0004f8b0-df8e-4f3d-866a-e3547122933d@nexiaels.688997.xyz:20757?security=tls&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&insecure=1&sni=nexiaels.688997.xyz#%40Daily_Configs
 hysteria2://123456@192.3.85.237:443?security=tls&insecure=1&sni=bing.com#%40V2rayNG3
 hysteria2://15cca331-9e92-449d-93b0-25f82203595f@gb.gomeow.online:20309?security=tls&insecure=0&sni=gb.gomeow.online#%40V2rayNG3
-hysteria2://1749cfb9-d214-4537-9f2f-543378dcf14f@hl.dport.top:33659?sni=hl.dport.top&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&insecure=1#Telegram:@config_proxy 💦
 hysteria2://22f2c759db51b3d0@109.120.135.123:12122?security=tls&obfs=salamander&obfs-password=de8287cd33b05fa3&insecure=1&sni=www.google.com#%40V2rayNG3
 hysteria2://5132d29b-e76d-4c5b-97a2-25d9ed8bd2b6@flyrb.flylink.cyou:35300?sni=flyxg.flylink.cyou&obfs=salamander&obfs-password=ZWYxYjI3YjlmY2I0OGEwYw%3D%3D&insecure=1#Telegram:@config_proxy 💦
 hysteria2://63399f11-4b3a-4ccb-9b9c-c9a3145912f9@rb.dport.top:33657?sni=rb.dport.top&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&insecure=1#Telegram:@config_proxy 💦
