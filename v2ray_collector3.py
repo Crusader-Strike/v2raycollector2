@@ -236,21 +236,30 @@ def validate_and_enrich_config(session: requests.Session, config: str) -> Option
     protocol_match = re.match(r"(\w+):?//", config)
     protocol = protocol_match.group(1).lower() if protocol_match else "unknown"
 
-    flag = COUNTRY_FLAGS.get(geo_info["country_code"], "❓")
-    # --- FIX START ---
-    # Create the enriched name
-    name = f"[{geo_info['country_code']}]{flag}-{latency}ms-{protocol.upper()}"
+    # --- FIX: Create a URL-safe and client-friendly name ---
+    # We remove emojis as they cause encoding issues in many V2Ray clients.
+    country_code = geo_info.get("country_code", "N/A").upper()
+    isp = geo_info.get("isp", "Unknown").split()[0] # Use only the first word of the ISP for brevity
     
+    # Example name: DE-Hetzner-139ms-VLESS
+    name = f"{country_code}-{isp}-{latency}ms-{protocol.upper()}"
+    
+    # Also create a display name with flag for the dashboard
+    flag = COUNTRY_FLAGS.get(country_code, "❓")
+    display_name = f"[{country_code}]{flag} {isp} {latency}ms"
+    # --- END FIX ---
     # Create the renamed config string for subscription files
     renamed_config = config.split("#")[0] + f"#{name}"
     # --- FIX END ---
     
     return {
         "config": config,
+        "renamed_config": renamed_config,
         "protocol": protocol,
-        "name": name,
+        "name": name, # The URL-safe name
+        "display_name": display_name, # The pretty name for the UI
         "latency": latency,
-        "country_code": geo_info["country_code"],
+        "country_code": country_code,
         "country_name": geo_info["country_name"],
         "isp": geo_info["isp"]
     }
@@ -393,5 +402,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
