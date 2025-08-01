@@ -190,7 +190,18 @@
             configsTableBody.addEventListener('click', e => {
                 if (e.target.classList.contains('copy-btn')) {
                     const button = e.target;
-                    const configStr = atob(button.dataset.config);
+            
+                    // --- FIX START ---
+                    // Helper function for safe Base64 decoding of Unicode strings
+                    const b64DecodeUnicode = (str) => {
+                        return decodeURIComponent(atob(str).split('').map((c) => {
+                            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                        }).join(''));
+                    };
+                    
+                    const configStr = b64DecodeUnicode(button.dataset.config);
+                    // --- FIX END ---
+            
                     navigator.clipboard.writeText(configStr).then(() => {
                         const originalText = button.textContent;
                         button.textContent = 'Copied!';
@@ -209,3 +220,4 @@
 </body>
 
 </html>
+
