@@ -1,21 +1,14 @@
 # .github/workflows/v2ray_collector.yml
 name: V2Ray Config Collector & Validator
 
-# Triggers for the workflow
 on:
-  # Allows manual triggering from the Actions tab
   workflow_dispatch:
-  
-  # Runs on a schedule (every hour at the 5th minute)
   schedule:
     - cron: '5 * * * *'
-    
-  # Runs on pushes to the main branch (e.g., when you update the script)
   push:
     branches:
       - main
 
-# IMPORTANT: Set permissions for the job to allow it to write to the repository
 permissions:
   contents: write
 
@@ -47,43 +40,39 @@ jobs:
 
       - name: 5. Manually Install Xray-core
         run: |
+          echo "Setting up temporary directory for Xray-core..."
+          mkdir xray_temp
+          
           echo "Downloading Xray-core..."
-          # Define the version and asset name
           XRAY_VERSION="1.8.10"
           ASSET_URL="https://github.com/XTLS/Xray-core/releases/download/v${XRAY_VERSION}/Xray-linux-64.zip"
-          
-          # Download using curl, -L follows redirects
           curl -L -o xray.zip "${ASSET_URL}"
           
-          echo "Unzipping Xray-core..."
-          unzip xray.zip
+          echo "Unzipping Xray-core into temporary directory..."
+          # Use -d to specify the output directory. This prevents file conflicts.
+          unzip -d xray_temp xray.zip
           
-          echo "Installing Xray-core to /usr/local/bin..."
-          # Move the xray executable to a directory in the system's PATH
-          # sudo is required to write to system directories
-          sudo mv xray /usr/local/bin/xray
-          
-          # Make the binary executable
+          echo "Installing Xray-core binary to /usr/local/bin..."
+          # Move only the executable from the temp directory to a system path
+          sudo mv xray_temp/xray /usr/local/bin/xray
           sudo chmod +x /usr/local/bin/xray
+          
+          echo "Cleaning up..."
+          rm xray.zip
+          rm -r xray_temp
           
           echo "Xray-core installed successfully:"
           xray --version
 
       - name: 6. Run the Collector and Validator Script
         run: |
-          # The script will now scrape, validate, enrich,
-          # and generate all output files including results.json
           python v2ray_collector3.py
 
       - name: 7. Commit and Push Changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          
-          # Add all new/modified files. -A stages new files, modifications, and deletions.
           git add -A
-          
-          # Check if there are any changes to commit
           if ! git diff-index --quiet HEAD; then
             echo "Changes found. Committing and pushing..."
             git commit -m "📊 Automated Config Update: $(date -u)"
