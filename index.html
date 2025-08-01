@@ -66,13 +66,19 @@
         </article>
     </main>
 
-    <script>
+        <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // ... (all variable declarations remain the same) ...
+            // --- FIX: Ensure all constants are declared at the top ---
             const API_URL = './validated_configs/results.json';
             const configsTableBody = document.querySelector('#configsTable tbody');
             const searchInput = document.getElementById('search');
-            // ... and so on
+            const statsContainer = document.getElementById('stats');
+            const lastUpdatedSpan = document.getElementById('lastUpdated');
+            const countrySubContainer = document.getElementById('country-sub-container');
+            const countrySubTitle = document.getElementById('country-sub-title');
+            const countrySubLinkElem = document.getElementById('country-sub-link');
+            const copyCountrySubBtn = document.getElementById('copy-country-sub-btn');
+            // --- END FIX ---
 
             let allConfigs = [];
             let countryMap = new Map();
@@ -96,6 +102,7 @@
                     renderData(allConfigs);
                 } catch (error) {
                     configsTableBody.innerHTML = `<tr><td colspan="6" style="text-align:center;">Could not load config data. Error: ${error.message}</td></tr>`;
+                    console.error("Failed to fetch config data:", error);
                 }
             }
 
@@ -113,10 +120,8 @@
                 }
                 configs.forEach(config => {
                     const row = document.createElement('tr');
-                    
-                    // --- FIX: Use display_name for showing, and renamed_config for copying ---
-                    const displayName = config.display_name || config.name; // Show pretty name, fallback to safe name
-                    const configToCopy = config.renamed_config || config.config; // This is the string with the #safe-name
+                    const displayName = config.display_name || config.name;
+                    const configToCopy = config.renamed_config || config.config;
                     
                     row.innerHTML = `
                         <td>${displayName}</td>
@@ -153,7 +158,7 @@
                 
                 const filteredConfigs = allConfigs.filter(c => 
                     (c.display_name && c.display_name.toLowerCase().includes(searchTerm)) ||
-                    (c.name && c.name.toLowerCase().includes(searchTerm)) || // also search safe name
+                    (c.name && c.name.toLowerCase().includes(searchTerm)) ||
                     (c.protocol && c.protocol.toLowerCase().includes(searchTerm)) ||
                     (c.country_name && c.country_name.toLowerCase().includes(searchTerm)) ||
                     (c.country_code && c.country_code.toLowerCase().includes(searchTerm)) ||
@@ -162,20 +167,9 @@
                 renderTable(filteredConfigs);
             }
 
-            configsTableBody.addEventListener('click', e => {
-                if (e.target.classList.contains('copy-btn')) {
-                    const button = e.target;
-                    // --- FIX: No more encoding/decoding needed as the string is URL-safe ---
-                    const configStr = button.dataset.config;
-                    navigator.clipboard.writeText(configStr).then(() => {
-                        button.textContent = 'Copied!';
-                        setTimeout(() => { button.textContent = 'Copy Config'; }, 2000);
-                    });
-                }
-            });
+            // Event Listeners
+            searchInput.addEventListener('input', handleSearch);
 
-            // (The other functions like renderStats, renderCharts, copyCountrySubBtn listener, etc. remain the same)
-            const copyCountrySubBtn = document.getElementById('copy-country-sub-btn');
             copyCountrySubBtn.addEventListener('click', () => {
                 navigator.clipboard.writeText(countrySubLinkElem.textContent).then(() => {
                     const originalText = copyCountrySubBtn.textContent;
@@ -184,20 +178,44 @@
                 });
             });
 
-            // Paste the full, correct renderStats and renderCharts functions here
-            function renderStats(configs) { /* ... same as before ... */ }
-            function renderCharts(configs) { /* ... same as before ... */ }
+            configsTableBody.addEventListener('click', e => {
+                if (e.target.classList.contains('copy-btn')) {
+                    const button = e.target;
+                    const configStr = button.dataset.config;
+                    navigator.clipboard.writeText(configStr).then(() => {
+                        button.textContent = 'Copied!';
+                        setTimeout(() => { button.textContent = 'Copy Config'; }, 2000);
+                    });
+                }
+            });
 
-            // Re-pasting them for completeness
+            // Chart and Stat rendering functions
             function renderStats(configs) {
                 const totalConfigs = configs.length;
                 const countries = new Set(configs.map(c => c.country_name)).size;
                 const protocols = new Set(configs.map(c => c.protocol)).size;
                 statsContainer.innerHTML = `<div class="card"><h3>Total Valid Configs</h3><p style="font-size: 2rem; margin:0;">${totalConfigs}</p></div><div class="card"><h3>Countries</h3><p style="font-size: 2rem; margin:0;">${countries}</p></div><div class="card"><h3>Protocols</h3><p style="font-size: 2rem; margin:0;">${protocols}</p></div>`;
             }
+
             function renderCharts(configs) {
-                const processChartData = (data, topN = 10) => { const sortedData = Object.entries(data).sort(([, a], [, b]) => b - a); const labels = [], values = []; const topItems = sortedData.slice(0, topN); topItems.forEach(([label, value]) => { labels.push(label); values.push(value); }); if (sortedData.length > topN) { const otherItems = sortedData.slice(topN); const otherValue = otherItems.reduce((sum, [, value]) => sum + value, 0); labels.push("Other"); values.push(otherValue); } return { labels, values }; };
-                const countryData = configs.reduce((acc, c) => { const country = c.country_name || "Unknown"; acc[country] = (acc[country] || 0) + 1; return acc; }, {});
+                const processChartData = (data, topN = 10) => {
+                    const sortedData = Object.entries(data).sort(([, a], [, b]) => b - a);
+                    const labels = [], values = [];
+                    const topItems = sortedData.slice(0, topN);
+                    topItems.forEach(([label, value]) => { labels.push(label); values.push(value); });
+                    if (sortedData.length > topN) {
+                        const otherItems = sortedData.slice(topN);
+                        const otherValue = otherItems.reduce((sum, [, value]) => sum + value, 0);
+                        labels.push("Other");
+                        values.push(otherValue);
+                    }
+                    return { labels, values };
+                };
+                const countryData = configs.reduce((acc, c) => {
+                    const country = c.country_name || "Unknown";
+                    acc[country] = (acc[country] || 0) + 1;
+                    return acc;
+                }, {});
                 const processedCountryData = processChartData(countryData, 9);
                 if (countryChart) countryChart.destroy();
                 countryChart = new Chart(document.getElementById('countryChart'), { type: 'doughnut', data: { labels: processedCountryData.labels, datasets: [{ data: processedCountryData.values }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top' } } } });
@@ -207,9 +225,10 @@
                 protocolChart = new Chart(document.getElementById('protocolChart'), { type: 'pie', data: { labels: processedProtocolData.labels, datasets: [{ data: processedProtocolData.values }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top' } } } });
             }
 
-
+            // Initial fetch
             fetchData();
         });
     </script>
 </body>
 </html>
+
