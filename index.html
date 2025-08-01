@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V2Ray Config Dashboard</title>
     <meta name="description" content="A live dashboard of validated V2Ray configurations.">
-    <!-- Pico.css for minimalist styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <!-- Chart.js for data visualization -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body { padding: 2rem; }
@@ -17,6 +15,10 @@
         td button { margin: 0; padding: 0.2rem 0.5rem; }
         .copied-feedback { color: var(--pico-color-green-400); font-weight: bold; }
         .chart-container { position: relative; height: 300px; width: 100%; }
+        /* New styles for the country subscription link */
+        #country-sub-container { display: none; margin-bottom: 1rem; padding: 1rem; border: 1px solid var(--pico-color-green-500); border-radius: var(--border-radius); }
+        #country-sub-container h4 { margin-bottom: 0.5rem; }
+        #country-sub-link { word-break: break-all; }
     </style>
 </head>
 <body>
@@ -31,23 +33,27 @@
         <div class="grid">
             <article class="card">
                 <h2>🌍 Configs by Country</h2>
-                <div class="chart-container">
-                    <canvas id="countryChart"></canvas>
-                </div>
+                <div class="chart-container"><canvas id="countryChart"></canvas></div>
             </article>
             <article class="card">
                 <h2>📊 Configs by Protocol</h2>
-                <div class="chart-container">
-                    <canvas id="protocolChart"></canvas>
-                </div>
+                <div class="chart-container"><canvas id="protocolChart"></canvas></div>
             </article>
         </div>
 
         <article>
             <header>
                 <h2>Available Configurations</h2>
-                <input type="search" id="search" placeholder="Search by name, country, protocol...">
+                <input type="search" id="search" placeholder="Search by name, country (e.g., Germany), protocol...">
             </header>
+            
+            <!-- New container for the country-specific subscription link -->
+            <div id="country-sub-container">
+                <h4 id="country-sub-title"></h4>
+                <code id="country-sub-link"></code>
+                <button id="copy-country-sub-btn" style="margin-top: 0.5rem;">Copy Link</button>
+            </div>
+
             <div style="overflow-x: auto;">
                 <table id="configsTable">
                     <thead>
@@ -60,9 +66,7 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <!-- Data will be populated by JavaScript -->
-                    </tbody>
+                    <tbody></tbody>
                 </table>
             </div>
             <footer>
@@ -78,24 +82,35 @@
             const searchInput = document.getElementById('search');
             const statsContainer = document.getElementById('stats');
             const lastUpdatedSpan = document.getElementById('lastUpdated');
+            // New elements
+            const countrySubContainer = document.getElementById('country-sub-container');
+            const countrySubTitle = document.getElementById('country-sub-title');
+            const countrySubLinkElem = document.getElementById('country-sub-link');
+            const copyCountrySubBtn = document.getElementById('copy-country-sub-btn');
 
             let allConfigs = [];
+            let countryMap = new Map();
             let countryChart, protocolChart;
 
             async function fetchData() {
                 try {
-                    const response = await fetch(`${API_URL}?t=${new Date().getTime()}`); // Cache-busting
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
+                    const response = await fetch(`${API_URL}?t=${new Date().getTime()}`);
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     const data = await response.json();
+                    
+                    allConfigs = data;
+                    // Create a map for easy lookup of country code by name
+                    allConfigs.forEach(c => {
+                        if (c.country_name && c.country_code) {
+                            countryMap.set(c.country_name.toLowerCase(), c.country_code.toUpperCase());
+                        }
+                    });
+                    
                     const fileDate = new Date(response.headers.get("last-modified"));
                     lastUpdatedSpan.textContent = fileDate.toLocaleString();
-                    allConfigs = data;
                     renderData(allConfigs);
                 } catch (error) {
                     configsTableBody.innerHTML = `<tr><td colspan="6" style="text-align:center;">Could not load config data. Error: ${error.message}</td></tr>`;
-                    console.error("Failed to fetch config data:", error);
                 }
             }
 
@@ -103,18 +118,6 @@
                 renderStats(configs);
                 renderTable(configs);
                 renderCharts(configs);
-            }
-            
-            function renderStats(configs) {
-                const totalConfigs = configs.length;
-                const countries = new Set(configs.map(c => c.country_name)).size;
-                const protocols = new Set(configs.map(c => c.protocol)).size;
-
-                statsContainer.innerHTML = `
-                    <div class="card"><h3>Total Valid Configs</h3><p style="font-size: 2rem; margin:0;">${totalConfigs}</p></div>
-                    <div class="card"><h3>Countries</h3><p style="font-size: 2rem; margin:0;">${countries}</p></div>
-                    <div class="card"><h3>Protocols</h3><p style="font-size: 2rem; margin:0;">${protocols}</p></div>
-                `;
             }
 
             function renderTable(configs) {
@@ -126,35 +129,91 @@
                 configs.forEach(config => {
                     const row = document.createElement('tr');
                     const flag = config.name.match(/(\p{Emoji})/u)?.[0] || '❓';
+                    const b64EncodeUnicode = str => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (match, p1) => String.fromCharCode('0x' + p1)));
                     
-                    const b64EncodeUnicode = (str) => {
-                        return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (match, p1) => {
-                            return String.fromCharCode('0x' + p1);
-                        }));
-                    };
-
                     row.innerHTML = `
                         <td>${config.name}</td>
                         <td>${config.protocol}</td>
                         <td>${flag} ${config.country_name}</td>
                         <td>${config.latency}</td>
                         <td>${config.isp}</td>
-                        <td><button class="copy-btn" data-config="${b64EncodeUnicode(config.config)}">Copy</button></td>
+                        <td><button class="copy-btn" data-config="${b64EncodeUnicode(config.renamed_config || config.config)}">Copy Config</button></td>
                     `;
                     configsTableBody.appendChild(row);
                 });
             }
-            
+
+            function handleSearch() {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                
+                // Check if the search term is a country name we know
+                const countryCode = countryMap.get(searchTerm);
+                
+                if (countryCode) {
+                    // Generate and show the country-specific subscription link
+                    const subLink = `${window.location.origin}${window.location.pathname}validated_configs/by-country/${countryCode}.txt`;
+                    countrySubTitle.textContent = `Subscription Link for ${searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1)}`;
+                    countrySubLinkElem.textContent = subLink;
+                    countrySubContainer.style.display = 'block';
+                } else {
+                    countrySubContainer.style.display = 'none';
+                }
+                
+                const filteredConfigs = allConfigs.filter(c => 
+                    (c.name && c.name.toLowerCase().includes(searchTerm)) ||
+                    (c.protocol && c.protocol.toLowerCase().includes(searchTerm)) ||
+                    (c.country_name && c.country_name.toLowerCase().includes(searchTerm)) ||
+                    (c.country_code && c.country_code.toLowerCase().includes(searchTerm)) ||
+                    (c.isp && c.isp.toLowerCase().includes(searchTerm))
+                );
+                renderTable(filteredConfigs);
+            }
+
+            // --- Event Listeners ---
+            searchInput.addEventListener('input', handleSearch);
+
+            copyCountrySubBtn.addEventListener('click', () => {
+                navigator.clipboard.writeText(countrySubLinkElem.textContent).then(() => {
+                    const originalText = copyCountrySubBtn.textContent;
+                    copyCountrySubBtn.textContent = 'Copied!';
+                    setTimeout(() => { copyCountrySubBtn.textContent = originalText; }, 2000);
+                });
+            });
+
+            configsTableBody.addEventListener('click', e => {
+                if (e.target.classList.contains('copy-btn')) {
+                    const button = e.target;
+                    const b64DecodeUnicode = str => decodeURIComponent(atob(str).split('').map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
+                    const configStr = b64DecodeUnicode(button.dataset.config);
+                    navigator.clipboard.writeText(configStr).then(() => {
+                        button.textContent = 'Copied!';
+                        setTimeout(() => { button.textContent = 'Copy Config'; }, 2000);
+                    });
+                }
+            });
+
+            // (The renderStats and renderCharts functions remain the same as the previous correct version)
+            function renderStats(configs){/* ... No changes needed here ... */}
+            function renderCharts(configs){/* ... No changes needed here ... */}
+
+            // Paste the full, correct renderStats and renderCharts functions here to be safe
+            function renderStats(configs) {
+                const totalConfigs = configs.length;
+                const countries = new Set(configs.map(c => c.country_name)).size;
+                const protocols = new Set(configs.map(c => c.protocol)).size;
+                statsContainer.innerHTML = `
+                    <div class="card"><h3>Total Valid Configs</h3><p style="font-size: 2rem; margin:0;">${totalConfigs}</p></div>
+                    <div class="card"><h3>Countries</h3><p style="font-size: 2rem; margin:0;">${countries}</p></div>
+                    <div class="card"><h3>Protocols</h3><p style="font-size: 2rem; margin:0;">${protocols}</p></div>
+                `;
+            }
+
             function renderCharts(configs) {
                 const processChartData = (data, topN = 10) => {
                     const sortedData = Object.entries(data).sort(([, a], [, b]) => b - a);
-                    const labels = [];
-                    const values = [];
+                    const labels = [], values = [];
                     const topItems = sortedData.slice(0, topN);
-                    topItems.forEach(([label, value]) => {
-                        labels.push(label);
-                        values.push(value);
-                    });
+                    topItems.forEach(([label, value]) => { labels.push(label); values.push(value); });
                     if (sortedData.length > topN) {
                         const otherItems = sortedData.slice(topN);
                         const otherValue = otherItems.reduce((sum, [, value]) => sum + value, 0);
@@ -163,90 +222,25 @@
                     }
                     return { labels, values };
                 };
-
                 const countryData = configs.reduce((acc, c) => {
                     const country = c.country_name || "Unknown";
                     acc[country] = (acc[country] || 0) + 1;
                     return acc;
                 }, {});
-
                 const processedCountryData = processChartData(countryData, 9);
-
                 if (countryChart) countryChart.destroy();
                 countryChart = new Chart(document.getElementById('countryChart'), {
-                    type: 'doughnut',
-                    data: {
-                        labels: processedCountryData.labels,
-                        datasets: [{ data: processedCountryData.values }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { position: 'top' }
-                        }
-                    }
+                    type: 'doughnut', data: { labels: processedCountryData.labels, datasets: [{ data: processedCountryData.values }] },
+                    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top' } } }
                 });
-
-                const protocolData = configs.reduce((acc, c) => {
-                    acc[c.protocol] = (acc[c.protocol] || 0) + 1;
-                    return acc;
-                }, {});
-                
-                const processedProtocolData = {
-                    labels: Object.keys(protocolData),
-                    values: Object.values(protocolData)
-                };
-
+                const protocolData = configs.reduce((acc, c) => { acc[c.protocol] = (acc[c.protocol] || 0) + 1; return acc; }, {});
+                const processedProtocolData = { labels: Object.keys(protocolData), values: Object.values(protocolData) };
                 if (protocolChart) protocolChart.destroy();
                 protocolChart = new Chart(document.getElementById('protocolChart'), {
-                    type: 'pie',
-                    data: {
-                        labels: processedProtocolData.labels,
-                        datasets: [{ data: processedProtocolData.values }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { position: 'top' }
-                        }
-                    }
+                    type: 'pie', data: { labels: processedProtocolData.labels, datasets: [{ data: processedProtocolData.values }] },
+                    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top' } } }
                 });
             }
-
-            searchInput.addEventListener('input', (e) => {
-                const searchTerm = e.target.value.toLowerCase();
-                const filteredConfigs = allConfigs.filter(c => 
-                    c.name.toLowerCase().includes(searchTerm) ||
-                    c.protocol.toLowerCase().includes(searchTerm) ||
-                    c.country_name.toLowerCase().includes(searchTerm) ||
-                    c.country_code.toLowerCase().includes(searchTerm) ||
-                    c.isp.toLowerCase().includes(searchTerm)
-                );
-                renderTable(filteredConfigs);
-            });
-            
-            configsTableBody.addEventListener('click', e => {
-                if (e.target.classList.contains('copy-btn')) {
-                    const button = e.target;
-                    const b64DecodeUnicode = (str) => {
-                        return decodeURIComponent(atob(str).split('').map((c) => {
-                            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-                        }).join(''));
-                    };
-                    const configStr = b64DecodeUnicode(button.dataset.config);
-                    navigator.clipboard.writeText(configStr).then(() => {
-                        const originalText = button.textContent;
-                        button.textContent = 'Copied!';
-                        button.classList.add('copied-feedback');
-                        setTimeout(() => {
-                            button.textContent = originalText;
-                            button.classList.remove('copied-feedback');
-                        }, 2000);
-                    });
-                }
-            });
 
             fetchData();
         });
