@@ -19,7 +19,10 @@ OUTPUT_DIR = Path("v2ray_configs")
 VALIDATED_DIR = Path("validated_configs")
 CHANNELS_FILE = Path("channels.txt")
 RESULTS_JSON_FILE = VALIDATED_DIR / "results.json"
-
+# Concurrency Settings
+# Reduce validator workers to avoid overwhelming the free geo-ip API
+SCRAPER_WORKERS = 20
+VALIDATOR_WORKERS = 25 # Reduced from 50 to be less aggressive
 # Xray Configuration
 # For local testing, point this to the xray executable.
 # In GitHub Actions, it will be available in the path.
@@ -63,7 +66,7 @@ logging.basicConfig(
 
 def create_requests_session(pool_size: int = 100) -> requests.Session:
     """
-    Creates a requests Session with a custom-sized connection pool and retry strategy.
+    Creates a requests Session with a custom-sized connection pool and a robust retry strategy.
     
     Args:
         pool_size: The maximum number of connections to keep in the pool.
@@ -73,21 +76,21 @@ def create_requests_session(pool_size: int = 100) -> requests.Session:
     """
     session = requests.Session()
     
-    # Define a retry strategy for more resilient requests
+    # Define a more robust retry strategy
     retry_strategy = Retry(
-        total=3,  # Total number of retries
-        backoff_factor=1,  # A delay factor between retries
-        status_forcelist=[429, 500, 502, 503, 504], # Status codes to retry on
+        total=5,
+        connect=5,  # Retry on connection errors
+        backoff_factor=0.5,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["HEAD", "GET", "OPTIONS"]
     )
     
-    # Create an adapter with the specified pool size and retry strategy
     adapter = HTTPAdapter(
         pool_connections=pool_size, 
         pool_maxsize=pool_size, 
         max_retries=retry_strategy
     )
     
-    # Mount the adapter for both HTTP and HTTPS
     session.mount("http://", adapter)
     session.mount("https://", adapter)
     
@@ -297,15 +300,13 @@ def main():
         logging.warning("No channels to scrape. Exiting.")
         return
 
-    # Create a single, robust session for the entire application lifecycle
-    # This session has an increased connection pool size to handle concurrency.
     session = create_requests_session()
     session.headers.update({"User-Agent": USER_AGENT})
 
     # Phase 1: Scraping
     logging.info("--- Starting Scraping Phase ---")
     raw_configs: Set[str] = set()
-    with concurrent.futures.ThreadPoolExecutor(max_workers=20, thread_name_prefix='Scraper') as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=SCRAPER_WORKERS, thread_name_prefix='Scraper') as executor:
         future_to_channel = {executor.submit(scrape_channel, session, name): name for name in channels}
         for future in concurrent.futures.as_completed(future_to_channel):
             try:
@@ -320,15 +321,13 @@ def main():
 
     if not raw_configs:
         logging.info("No configs found to validate. Exiting.")
-        # Ensure dashboard files are at least created to avoid 404 errors on GitHub Pages
         save_results([]) 
         return
 
     # Phase 2: Validation and Enrichment
     logging.info("--- Starting Validation and Enrichment Phase ---")
     validated_configs: List[ValidatedConfig] = []
-    # Set max_workers for validation based on desired concurrency for network requests
-    with concurrent.futures.ThreadPoolExecutor(max_workers=50, thread_name_prefix='Validator') as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=VALIDATOR_WORKERS, thread_name_prefix='Validator') as executor:
         future_to_config = {executor.submit(validate_and_enrich_config, session, cfg): cfg for cfg in raw_configs}
         
         processed_count = 0
@@ -343,11 +342,9 @@ def main():
                 config_str = future_to_config[future]
                 logging.error(f"An exception occurred while validating config {config_str[:30]}...: {e}")
             
-            # Log progress more cleanly
             if processed_count % 20 == 0 or processed_count == total_count:
                 logging.info(f"Validation progress: {processed_count}/{total_count} configs processed.")
 
-    # Sort results by latency (best first)
     validated_configs.sort(key=lambda x: x["latency"])
     
     logging.info(f"--- Validation Complete --- Found {len(validated_configs)} working configs.")
@@ -355,13 +352,8 @@ def main():
     # Phase 3: Save results
     save_results(validated_configs)
 
-    # Close the session explicitly (good practice)
     session.close()
 
 
 if __name__ == "__main__":
-    # Note: The validation logic is a simplified placeholder.
-    # Real-world validation with xray-core requires generating a full-fledged config
-    # for each outbound and testing a connection through it, which is significantly more complex.
-    # This script provides the full architecture and a simulated validation.
     main()
