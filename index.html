@@ -15,7 +15,6 @@
         td button { margin: 0; padding: 0.2rem 0.5rem; }
         .copied-feedback { color: var(--pico-color-green-400); font-weight: bold; }
         .chart-container { position: relative; height: 300px; width: 100%; }
-        /* New styles for the country subscription link */
         #country-sub-container { display: none; margin-bottom: 1rem; padding: 1rem; border: 1px solid var(--pico-color-green-500); border-radius: var(--border-radius); }
         #country-sub-container h4 { margin-bottom: 0.5rem; }
         #country-sub-link { word-break: break-all; }
@@ -47,7 +46,6 @@
                 <input type="search" id="search" placeholder="Search by name, country (e.g., Germany), protocol...">
             </header>
             
-            <!-- New container for the country-specific subscription link -->
             <div id="country-sub-container">
                 <h4 id="country-sub-title"></h4>
                 <code id="country-sub-link"></code>
@@ -57,14 +55,7 @@
             <div style="overflow-x: auto;">
                 <table id="configsTable">
                     <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Protocol</th>
-                            <th>Country</th>
-                            <th>Latency (ms)</th>
-                            <th>ISP</th>
-                            <th>Action</th>
-                        </tr>
+                        <tr><th>Name</th><th>Protocol</th><th>Country</th><th>Latency (ms)</th><th>ISP</th><th>Action</th></tr>
                     </thead>
                     <tbody></tbody>
                 </table>
@@ -82,7 +73,6 @@
             const searchInput = document.getElementById('search');
             const statsContainer = document.getElementById('stats');
             const lastUpdatedSpan = document.getElementById('lastUpdated');
-            // New elements
             const countrySubContainer = document.getElementById('country-sub-container');
             const countrySubTitle = document.getElementById('country-sub-title');
             const countrySubLinkElem = document.getElementById('country-sub-link');
@@ -99,7 +89,6 @@
                     const data = await response.json();
                     
                     allConfigs = data;
-                    // Create a map for easy lookup of country code by name
                     allConfigs.forEach(c => {
                         if (c.country_name && c.country_code) {
                             countryMap.set(c.country_name.toLowerCase(), c.country_code.toUpperCase());
@@ -131,13 +120,15 @@
                     const flag = config.name.match(/(\p{Emoji})/u)?.[0] || '❓';
                     const b64EncodeUnicode = str => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (match, p1) => String.fromCharCode('0x' + p1)));
                     
+                    const configToCopy = config.renamed_config || config.config;
+                    
                     row.innerHTML = `
                         <td>${config.name}</td>
                         <td>${config.protocol}</td>
                         <td>${flag} ${config.country_name}</td>
                         <td>${config.latency}</td>
                         <td>${config.isp}</td>
-                        <td><button class="copy-btn" data-config="${b64EncodeUnicode(config.renamed_config || config.config)}">Copy Config</button></td>
+                        <td><button class="copy-btn" data-config="${b64EncodeUnicode(configToCopy)}">Copy Config</button></td>
                     `;
                     configsTableBody.appendChild(row);
                 });
@@ -145,14 +136,19 @@
 
             function handleSearch() {
                 const searchTerm = searchInput.value.toLowerCase().trim();
+                let foundCountryCode = null;
+
+                for (const [countryName, countryCode] of countryMap.entries()) {
+                    if (searchTerm.includes(countryName.toLowerCase()) || searchTerm.toUpperCase() === countryCode) {
+                        foundCountryCode = countryCode;
+                        break;
+                    }
+                }
                 
-                // Check if the search term is a country name we know
-                const countryCode = countryMap.get(searchTerm);
-                
-                if (countryCode) {
-                    // Generate and show the country-specific subscription link
-                    const subLink = `${window.location.origin}${window.location.pathname}validated_configs/by-country/${countryCode}.txt`;
-                    countrySubTitle.textContent = `Subscription Link for ${searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1)}`;
+                if (foundCountryCode) {
+                    const countryName = [...countryMap.entries()].find(([name, code]) => code === foundCountryCode)[0];
+                    const subLink = `${window.location.origin}${window.location.pathname.replace(/\/$/, '')}/validated_configs/by-country/${foundCountryCode}.txt`;
+                    countrySubTitle.textContent = `Subscription Link for ${countryName.charAt(0).toUpperCase() + countryName.slice(1)}`;
                     countrySubLinkElem.textContent = subLink;
                     countrySubContainer.style.display = 'block';
                 } else {
@@ -169,7 +165,6 @@
                 renderTable(filteredConfigs);
             }
 
-            // --- Event Listeners ---
             searchInput.addEventListener('input', handleSearch);
 
             copyCountrySubBtn.addEventListener('click', () => {
@@ -192,11 +187,6 @@
                 }
             });
 
-            // (The renderStats and renderCharts functions remain the same as the previous correct version)
-            function renderStats(configs){/* ... No changes needed here ... */}
-            function renderCharts(configs){/* ... No changes needed here ... */}
-
-            // Paste the full, correct renderStats and renderCharts functions here to be safe
             function renderStats(configs) {
                 const totalConfigs = configs.length;
                 const countries = new Set(configs.map(c => c.country_name)).size;
