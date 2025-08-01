@@ -56,7 +56,7 @@ jobs:
         run: |
           # The script will now scrape, validate (simulated), enrich,
           # and generate all output files including results.json
-          python v2ray_collector.py
+          python v2ray_collector3.py
 
       - name: 7. Commit and Push Changes
         run: |
