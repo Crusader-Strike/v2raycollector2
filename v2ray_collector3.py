@@ -21,8 +21,8 @@ CHANNELS_FILE = Path("channels.txt")
 RESULTS_JSON_FILE = VALIDATED_DIR / "results.json"
 # Concurrency Settings
 # Reduce validator workers to avoid overwhelming the free geo-ip API
-SCRAPER_WORKERS = 20
-VALIDATOR_WORKERS = 25 # Reduced from 50 to be less aggressive
+SCRAPER_WORKERS = 10
+VALIDATOR_WORKERS = 15 # Reduced from 50 to be less aggressive
 # Xray Configuration
 # For local testing, point this to the xray executable.
 # In GitHub Actions, it will be available in the path.
@@ -76,12 +76,13 @@ def create_requests_session(pool_size: int = 100) -> requests.Session:
     """
     session = requests.Session()
     
-    # Define a more robust retry strategy
+    # Define a comprehensive retry strategy for network instability
     retry_strategy = Retry(
-        total=5,
-        connect=5,  # Retry on connection errors
-        backoff_factor=0.5,
-        status_forcelist=[429, 500, 502, 503, 504],
+        total=5,                # Total number of retries
+        read=5,                 # Number of retries on read errors
+        connect=5,              # Number of retries on connection errors
+        backoff_factor=1,       # A delay factor between retries: {backoff factor} * (2 ** ({number of total retries} - 1))
+        status_forcelist=[429, 502, 503, 504], # Retry on these server errors (500 is often a permanent server bug)
         allowed_methods=["HEAD", "GET", "OPTIONS"]
     )
     
@@ -392,4 +393,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
