@@ -27,7 +27,7 @@ jobs:
           pip install -r requirements.txt --no-cache-dir # Disable cache to ensure fresh install
 
       - name: Run V2Ray Collector
-        run: python v2ray_collector.py
+        run: python v2ray_collector2.py
 
       - name: Commit and push if changed
         run: |
