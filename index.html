@@ -122,13 +122,22 @@
                     const row = document.createElement('tr');
                     const flag = config.name.match(/(\p{Emoji})/u)?.[0] || '❓';
                     
+                    // --- FIX START ---
+                    // Helper function for safe Base64 encoding of Unicode strings
+                    const b64EncodeUnicode = (str) => {
+                        return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (match, p1) => {
+                            return String.fromCharCode('0x' + p1);
+                        }));
+                    };
+                    // --- FIX END ---
+            
                     row.innerHTML = `
                         <td>${config.name}</td>
                         <td>${config.protocol}</td>
                         <td>${flag} ${config.country_name}</td>
                         <td>${config.latency}</td>
                         <td>${config.isp}</td>
-                        <td><button class="copy-btn" data-config="${btoa(config.config)}">Copy</button></td>
+                        <td><button class="copy-btn" data-config="${b64EncodeUnicode(config.config)}">Copy</button></td>
                     `;
                     configsTableBody.appendChild(row);
                 });
@@ -198,4 +207,5 @@
         });
     </script>
 </body>
+
 </html>
