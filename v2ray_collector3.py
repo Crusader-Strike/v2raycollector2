@@ -236,7 +236,13 @@ def validate_and_enrich_config(session: requests.Session, config: str) -> Option
     protocol = protocol_match.group(1).lower() if protocol_match else "unknown"
 
     flag = COUNTRY_FLAGS.get(geo_info["country_code"], "❓")
+    # --- FIX START ---
+    # Create the enriched name
     name = f"[{geo_info['country_code']}]{flag}-{latency}ms-{protocol.upper()}"
+    
+    # Create the renamed config string for subscription files
+    renamed_config = config.split("#")[0] + f"#{name}"
+    # --- FIX END ---
     
     return {
         "config": config,
@@ -267,14 +273,8 @@ def save_results(results: List[ValidatedConfig]):
         protocol = res["protocol"]
         if protocol not in grouped_by_protocol:
             grouped_by_protocol[protocol] = []
-        # Add the renamed config to the list
-        renamed_config = res["config"]
-        if "#" not in renamed_config:
-            renamed_config += f"#{res['name']}"
-        else: # if name already exists, replace it
-            renamed_config = renamed_config.split("#")[0] + f"#{res['name']}"
-        
-        grouped_by_protocol[protocol].append(renamed_config)
+        # Use the pre-renamed config
+        grouped_by_protocol[protocol].append(res["renamed_config"])
     
     # Save individual subscription files
     all_renamed_configs = []
@@ -356,4 +356,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
