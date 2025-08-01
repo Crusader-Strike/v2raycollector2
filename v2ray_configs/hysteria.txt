@@ -4,6 +4,8 @@ hysteria2://0004f8b0-df8e-4f3d-866a-e3547122933d@nexiaels.688997.xyz:20757?secur
 hysteria2://AZrgUfcGknbd6Q6LHkzMT0ODVk@43.199.72.130:32089?security=tls&insecure=1#%F0%9F%87%AE%F0%9F%87%B1telegram%20%E2%9E%A0%20%40v2rayNG_Matsuri
 hysteria2://Telegram--%3E%40Ln2Ray@gavazn.lnmarketplace.net:45000?security=tls&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray&insecure=1&sni=gavazn.55994421.xyz#%D8%A2%D9%84%D9%85%D8%A7%D9%86%20%F0%9F%87%A9%F0%9F%87%AA%20%40V2xay
 hysteria2://Yet-Another-Public-Config-1@YAPC-1.adamhayward.co.uk:35200?obfs=salamander&obfs-password=Yet-Another-Public-Config-1&sni=YAPC-1.afshin.ir&insecure=0#@SaghiVpnX[🇳🇱]
+hysteria2://d4a98364-7b10-4ebd-b79b-7f045d66ff33@flyhl.flylink.cyou:35250?security=tls&obfs=salamander&obfs-password=ZWYxYjI3YjlmY2I0OGEwYw%3D%3D&insecure=1&sni=flyhl.flylink.cyou#%40Daily_Configs
+hysteria2://d4a98364-7b10-4ebd-b79b-7f045d66ff33@flyhl.flylink.cyou:35250?security=tls&obfs=salamander&obfs-password=ZWYxYjI3YjlmY2I0OGEwYw%3D%3D&insecure=1&sni=flyhl.flylink.cyou#Telegram:@config_proxy 😍
 hysteria2://dongtaiwang.com@208.87.243.187:22222?security=tls&insecure=1&sni=www.bing.com#%40Daily_Configs
 hysteria2://dongtaiwang.com@51.159.111.32:31180?security=tls&insecure=1&sni=apple.com#FR 2 🇫🇷 | @v2xay
 hysteria2://nG8WL2HVYqARhg2XqxKPsARekSU@18.141.229.199:7431?security=tls&insecure=1#%F0%9F%87%AE%F0%9F%87%B3telegram%20%E2%9E%A0%20%40v2rayNG_Matsuri
