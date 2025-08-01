@@ -1,972 +1,279 @@
 [
   {
-    "config": "vless://edc0a710-b736-455a-a9f2-d26150e624b2@enthusiastic-century.oneeat.co:80?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-76ms-VLESS",
-    "latency": 76,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://f278037e-ce36-4634-9b4d-fca93e345a35@104.16.191.195:80?path=%2Fvpnowl-vpnowl-vpnowl-vpnowl%3Fed%3D2560&security=none&encryption=none&host=barayeiran.mahiozonboroon.qzz.io&fp=random&type=ws&sni=barayeiran.mahiozonboroon.qzz.io#Allnet%20Telegram%3A%40ultrasurf_12",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-84ms-VLESS",
-    "latency": 84,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKSWhONnJCS2thRWJvTE5YVlN2NXJx@142.4.216.225:80#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-88ms-SS",
-    "latency": 88,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "OVH SAS"
-  },
-  {
-    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.94:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-120ms-VLESS",
-    "latency": 120,
-    "country_code": "FR",
-    "country_name": "France",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vless://8aa48fb3-9429-4029-8dd4-4ba7fe15ad01@zula.ir:8880?path=%2F%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config%3Fed%3D8880&security=none&encryption=none&host=www.website-shop.ir&type=httpupgrade#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-139ms-VLESS",
-    "latency": 139,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://12fd53ec-9184-41a0-8ab5-1910ad8d6e8d@gr.dnszone.top:45500?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-139ms-VLESS",
-    "latency": 139,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "DigitalOcean, LLC"
-  },
-  {
-    "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@45.82.251.78:8880?mode=gun&security=&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-141ms-VLESS",
-    "latency": 141,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vless://dcdbb1fb-ab20-447b-aa0a-7d149add2a53@91.99.97.62:51479?mode=gun&security=reality&encryption=none&pbk=ywnxBH4IYI83aaL9k0og1Slb9CU-eEhPypH3pXD0VSg&fp=chrome&spx=%2F&type=grpc&serviceName=%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM&sni=www.cdn77.com#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-143ms-VLESS",
-    "latency": 143,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Hetzner Online GmbH"
-  },
-  {
-    "config": "vless://83b1b380-b0cf-4b4a-910b-154420def5d7@gr.dnszone.top:45500?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[N/A]\u2753-156ms-VLESS",
-    "latency": 156,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.231:8880?mode=gun&security=none&encryption=none&authority=%40HiByeVPNN&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-205ms-VLESS",
-    "latency": 205,
-    "country_code": "FR",
-    "country_name": "France",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vless://30f2d443-af46-4dd6-83c9-b5e17299ebd2@160.153.0.32:443?path=%2F%3FJoin---MARAMBASHI---Join---MARAMBASHI---Join---MARAMBASHI---Join---MARAMBASHI%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=carlotta.shoorekeeper.cloudns.org&type=ws&sni=carlotta.shoorekeeper.cloudns.org#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-259ms-VLESS",
-    "latency": 259,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "Cloudflare London, LLC"
-  },
-  {
-    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.139:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-263ms-VLESS",
-    "latency": 263,
-    "country_code": "FR",
-    "country_name": "France",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptU1FpdVQ1alIxN255V2djWE9QclRX@77.105.166.12:8594#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[N/A]\u2753-308ms-SS",
-    "latency": 308,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
     "config": "vmess://eyJhZGQiOiI2Mi4xNDYuMjM1LjE5MyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJjZmM1YTg3Zi0zYzEzLTRlMjUtYjU1Ni0xNzZjZGQ2YjVjNmEiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjI4MDExIiwicHMiOiLwn5uh77iPIEBGcmVha0NvbmZpZyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=",
     "protocol": "vmess",
-    "name": "[SG]\ud83c\uddf8\ud83c\uddec-320ms-VMESS",
-    "latency": 320,
+    "name": "[SG]\ud83c\uddf8\ud83c\uddec-50ms-VMESS",
+    "latency": 50,
     "country_code": "SG",
     "country_name": "Singapore",
     "isp": "Contabo Asia Private Limited"
   },
   {
-    "config": "vless://7f09e7b4-4680-4653-a2da-307d110b6961@fAmoUS-EXpERiENcE.seOtOoLsforyou.cO.Uk:80?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "config": "vless://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@168.119.245.178:2020?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-321ms-VLESS",
-    "latency": 321,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://f3af923e-ecfe-46d5-9c27-4ff95f739afe@91.99.216.98:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-370ms-VLESS",
-    "latency": 370,
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-51ms-VLESS",
+    "latency": 51,
     "country_code": "DE",
     "country_name": "Germany",
-    "isp": "ParsOnline Co"
-  },
-  {
-    "config": "vmess://eyJhZGQiOiJwYW5lbDMuaXB5YXIub3JnIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImMwY2NkZWI5LTc4NGMtNGQ2Ny1iOTA0LTIwZGNhYWM5OTAyYSIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMzIwMTciLCJwcyI6IkFsbG5ldCBUZWxlZ3JhbTpAdWx0cmFzdXJmXzEyIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
-    "protocol": "vmess",
-    "name": "[N/A]\u2753-370ms-VMESS",
-    "latency": 370,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206T0RJMFpUa3haRGt4TTJFMFkyVXdNUT09OlkyTXdOamRtWXpVdFlUSXhZeTAwTkE9PQ%3D%3D@zz.xn--2vxn29amga.com:8094#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[HK]\ud83c\udded\ud83c\uddf0-374ms-SS",
-    "latency": 374,
-    "country_code": "HK",
-    "country_name": "Hong Kong",
-    "isp": "Hong Kong Telecommunications (HKT) Limited Mass Internet"
-  },
-  {
-    "config": "vless://3f9f37a6-8d0c-4ccc-9449-a533db0eacaa@165.22.76.53:8710?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-386ms-VLESS",
-    "latency": 386,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "DigitalOcean, LLC"
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@45.158.171.146:8080#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[VE]\u2753-406ms-SS",
-    "latency": 406,
-    "country_code": "VE",
-    "country_name": "Venezuela",
-    "isp": "NETCOM PLUS, C.A"
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3T3J2TDBKSDlmMkx2SUU0NU1UN1dO@77.105.166.12:8594#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-409ms-SS",
-    "latency": 409,
-    "country_code": "FR",
-    "country_name": "France",
-    "isp": "Aeza International LTD"
-  },
-  {
-    "config": "vless://27f2ce3b-7488-4078-8887-b9c129bddc3f@86.48.24.154:5900?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-444ms-VLESS",
-    "latency": 444,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "Nubes, LLC"
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@185.231.233.173:990#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[PT]\u2753-451ms-SS",
-    "latency": 451,
-    "country_code": "PT",
-    "country_name": "Portugal",
-    "isp": "BrainStorm Network, Inc"
-  },
-  {
-    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.246:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-452ms-VLESS",
-    "latency": 452,
-    "country_code": "FR",
-    "country_name": "France",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vmess://eyJhZGQiOiIyMTYuMTczLjY5LjI1MCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI5MTM4MjA5Mi0yMzMwLTQ1NWItOGExYy05YzEyOWNmZTY2MWEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6Ijg0NDMiLCJwcyI6IvCfm6HvuI8gQEZyZWFrQ29uZmlnIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9",
-    "protocol": "vmess",
-    "name": "[LV]\u2753-461ms-VMESS",
-    "latency": 461,
-    "country_code": "LV",
-    "country_name": "Latvia",
-    "isp": "SIA VEESP"
-  },
-  {
-    "config": "vmess://eyJhZGQiOiIxNzIuNjcuMTMxLjI3IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJyYWsyZDQuODkwNjAwMDQueHl6IiwiaWQiOiIzNTBlMmIwMS1kNDEwLTQ0YTYtOTBiYS02NDgzZjEwNjI5NzIiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjIwNTMiLCJwcyI6IvCfm6HvuI8gQEZyZWFrQ29uZmlnIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6InRscyIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9",
-    "protocol": "vmess",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-479ms-VMESS",
-    "latency": 479,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.223.115:8443?mode=auto&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-489ms-VLESS",
-    "latency": 489,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Parsonline"
-  },
-  {
-    "config": "vless://949e6151-6899-4605-f2d1-51570f60d51d@65.109.208.107:2083?mode=gun&security=reality&encryption=none&pbk=mDWXgatiJqUc4fmeDQqGusEBIhjFVrQ85y_ZUfNpFV8&fp=firefox&spx=%2F&type=grpc&serviceName=melov2ray&sni=khamenei.ir&sid=54602915a7#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[FI]\ud83c\uddeb\ud83c\uddee-589ms-VLESS",
-    "latency": 589,
-    "country_code": "FI",
-    "country_name": "Finland",
     "isp": "Hetzner Online GmbH"
-  },
-  {
-    "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@public15v7.fastipsport.com:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-594ms-VLESS",
-    "latency": 594,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vless://1b135c37-a20e-4716-c0f1-b2572dc45127@91.98.21.58:18606?mode=gun&security=reality&encryption=none&pbk=9C5_X-zVkO-NpXUO1FCNkQOIaoC3WmudlbiMHtCC4Ew&fp=chrome&spx=%2F&type=grpc&serviceName=%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android&sni=www.cdn77.com#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-600ms-VLESS",
-    "latency": 600,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "CLOUD-NBG"
-  },
-  {
-    "config": "vless://9eca9c74-951c-4947-c108-72c0ae70a74a@chat.deepseek.com:80?path=%2Folem%2Fws%3Fed%3D1024&security=none&encryption=none&host=fin.channel.digicyber.click&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-610ms-VLESS",
-    "latency": 610,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://401374e6-df77-41fb-f638-dad8184f175b@all.tellmethetrue.shop:443?mode=gun&security=tls&alpn=h2&encryption=none&type=grpc&sni=pqh28v5.hiddendom.shop#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-620ms-VLESS",
-    "latency": 620,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://0077f357-40b8-4496-8ff6-3f012bdb2eaa@server229242717676380726.tas-bazi.com:443?mode=stream-one&path=%2Fsc&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-721ms-VLESS",
-    "latency": 721,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Hetzner Online AG"
-  },
-  {
-    "config": "vless://89ba9206-305a-4dbf-bd62-9144c1b0e0c4@www.speedtest.net:2095?path=%2Fhajmi%3Fed%3D2050&security=none&encryption=none&host=dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Nb-De.85858599.xYz.&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-729ms-VLESS",
-    "latency": 729,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://TELEGRAM-CONFiGLiNE@172.66.40.99:8880?path=%2Ftelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D8880&security=none&encryption=none&host=usnew.motorphrotan.ir.&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-745ms-VLESS",
-    "latency": 745,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://3891b3ce-bb3a-45bf-bd8e-90e2487d121e@wouldyoumarriemepleasefuckthesystem5.siasia.ir:2053?path=%2Fapiii&security=tls&alpn=h3%2Ch2&encryption=none&host=hheydudethisworldisshet.siasia.ir&fp=randomized&type=ws&sni=hheydudethisworldisshet.siasia.ir#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[N/A]\u2753-761ms-VLESS",
-    "latency": 761,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@45.139.24.24:57456#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[RU]\ud83c\uddf7\ud83c\uddfa-781ms-SS",
-    "latency": 781,
-    "country_code": "RU",
-    "country_name": "Russia",
-    "isp": "Kviktel LLC"
-  },
-  {
-    "config": "vless://Parsashonam-294@185.146.173.39:8880?path=%2FParsashonam-Parsashonam-Parsashonam%2F%3Fed%3D2056&security=none&encryption=none&host=De.Parsashonam.CfD.&type=httpupgrade#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[N/A]\u2753-786ms-VLESS",
-    "latency": 786,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "vmess://eyJhZGQiOiJtZWxpX3Byb3h5eS52aXAtcGxhbi5vcmciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiMmVkODAyNjYtMGIwYS00NzhjLTg2ZmQtMjc4ZmZiODRjZDQ0IiwibmV0IjoiZ3JwYyIsInBhdGgiOiIiLCJwb3J0IjoiNDQzIiwicHMiOiLwn5uh77iPIEBGcmVha0NvbmZpZyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiZ3VuIiwidiI6IjIifQ==",
-    "protocol": "vmess",
-    "name": "[N/A]\u2753-788ms-VMESS",
-    "latency": 788,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "vless://81dcfd51-a977-47b4-8a89-b203cc8ef3a6@212.23.214.196:48265?security=none&encryption=none&host=telewebion.com&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[N/A]\u2753-796ms-VLESS",
-    "latency": 796,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2FStupid-World%2F103.106.228.126-2053&security=tls&host=vpn.stupidworld.web.id&fp=chrome&type=ws&sni=vpn.stupidworld.web.id#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "trojan",
-    "name": "[N/A]\u2753-808ms-TROJAN",
-    "latency": 808,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "vless://Parsashonam-293@185.146.173.39:8880?path=%2FParsashonam-Parsashonam-Parsashonam%2F%3Fed%3D2056&security=none&encryption=none&host=De.Parsashonam.CfD.&type=httpupgrade#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[SE]\ud83c\uddf8\ud83c\uddea-845ms-VLESS",
-    "latency": 845,
-    "country_code": "SE",
-    "country_name": "Sweden",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://1ae544de-4b19-4bd0-a7d6-e47e2e19a057@itmi-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz:443?security=reality&alpn=http%2F1.1&encryption=none&pbk=u13aSU1om7Mc67RxQHmVQx7iALWAUCn_j38zQ5LpYXc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=itgetsbetter.org&sid=462c73aef9f448#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[IT]\u2753-864ms-VLESS",
-    "latency": 864,
-    "country_code": "IT",
-    "country_name": "Italy",
-    "isp": "BellSouth.net Inc."
-  },
-  {
-    "config": "vless://ac083fa9-df9a-4722-b70d-24c17bef0516@185.243.49.205:8444?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[IR]\ud83c\uddee\ud83c\uddf7-931ms-VLESS",
-    "latency": 931,
-    "country_code": "IR",
-    "country_name": "Iran",
-    "isp": "Toloe Rayaneh Loghman Educational and Cultural Co."
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.87.175.157:8080#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-985ms-SS",
-    "latency": 985,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "SBL-OSL"
   },
   {
     "config": "vless://9eca9c74-951c-4947-c108-72c0ae70a74a@tgju.org:80?path=%2Folem%2Fws%3Fed%3D1024&security=none&encryption=none&host=fin.channel.digicyber.click&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1005ms-VLESS",
-    "latency": 1005,
+    "name": "[N/A]\u2753-63ms-VLESS",
+    "latency": 63,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@188.245.207.238:2020?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-71ms-VLESS",
+    "latency": 71,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://TELEGRAM-CONFiGLiNE@172.66.40.99:80?path=%2Ftelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D80&security=none&encryption=none&host=FanG.MotOrphrotan.ir.&type=httpupgrade#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-111ms-VLESS",
+    "latency": 111,
     "country_code": "CA",
     "country_name": "Canada",
     "isp": "Cloudflare, Inc."
   },
   {
-    "config": "vmess://eyJhZGQiOiJucG1qcy5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImQzbTF4dms1MGstNTI1MzQwMTczLnphbWFtLmNvIiwiaWQiOiJkM20xeHZrNTBrIiwibmV0Ijoid3MiLCJwYXRoIjoiL2Rvd25sb2FkL2NkbiIsInBvcnQiOiI4MDgwIiwicHMiOiLwn5uh77iPIEBGcmVha0NvbmZpZyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==",
-    "protocol": "vmess",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1032ms-VMESS",
-    "latency": 1032,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://telegram-id-Arfilter@172.66.40.99:443?path=%2Ftelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%3Fed%3D2048&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=vPi.SpEeDtEsT2029.CoM&fp=firefox&type=ws&sni=vPi.SpEeDtEsT2029.CoM#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1063ms-VLESS",
-    "latency": 1063,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://34c9f621-0614-4b7f-aab3-c4400bb15a89@45.83.20.34:58164?security=reality&encryption=none&pbk=7cbcFHSx2vqz38zW9BmlSIHTTSdNtlgv_S5uZ0MSIAE&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=788456bc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[BE]\u2753-1072ms-VLESS",
-    "latency": 1072,
-    "country_code": "BE",
-    "country_name": "Belgium",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vmess://eyJhZGQiOiI5MS45OS4xNTMuMzkiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InBhbmVsLmFydXNoYXNvZnQuY29tIiwiaWQiOiI5ODVhZjQ4OS1mYjE2LTQ5MWEtODEzYy1mZGQ5MWI2YjA2ZWUiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjM5MTMwIiwicHMiOiLwn5uh77iPIEBGcmVha0NvbmZpZyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==",
-    "protocol": "vmess",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1085ms-VMESS",
-    "latency": 1085,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "ParsOnline Co"
-  },
-  {
-    "config": "vless://0dcdcbae-0ff6-467c-addb-bff403cd689f@139.162.175.65:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1112ms-VLESS",
-    "latency": 1112,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Akamai Technologies, Inc."
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwdXpuR1l4eUpGNU95T3ZCUldYNTJn@91.99.173.67:9007#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@series-a2-mec.varzesh360.co:443#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "ss",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1113ms-SS",
-    "latency": 1113,
+    "name": "[GB]\ud83c\uddec\ud83c\udde7-131ms-SS",
+    "latency": 131,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "isp": "Microsoft Corporation"
+  },
+  {
+    "config": "vless://dcdbb1fb-ab20-447b-aa0a-7d149add2a53@91.99.97.62:51479?mode=gun&security=reality&encryption=none&pbk=ywnxBH4IYI83aaL9k0og1Slb9CU-eEhPypH3pXD0VSg&fp=chrome&spx=%2F&type=grpc&serviceName=%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM----------%40VPN_ROOM--------%40VPN_ROOM&sni=www.cdn77.com#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-145ms-VLESS",
+    "latency": 145,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "Hetzner Online GmbH"
+  },
+  {
+    "config": "vless://618a6afb-62ce-42be-ffdf-692b1038467b@91.107.163.96:2096?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-158ms-VLESS",
+    "latency": 158,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "Hetzner Online AG"
+  },
+  {
+    "config": "vless://1ae544de-4b19-4bd0-a7d6-e47e2e19a057@itmi-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz:443?security=reality&alpn=http%2F1.1&encryption=none&pbk=u13aSU1om7Mc67RxQHmVQx7iALWAUCn_j38zQ5LpYXc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=itgetsbetter.org&sid=462c73aef9f448#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[IT]\u2753-165ms-VLESS",
+    "latency": 165,
+    "country_code": "IT",
+    "country_name": "Italy",
+    "isp": "Microsoft Corporation"
+  },
+  {
+    "config": "trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2F%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram&security=tls&host=vpn.stupidworld.web.id&fp=chrome&type=ws&sni=vpn.stupidworld.web.id#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "trojan",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-244ms-TROJAN",
+    "latency": 244,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://4d794980-54c0-4fcb-8def-c2beaecadbad@172.66.44.81:2083?path=%2F&security=tls&encryption=none&type=ws&sni=azadnet05.pages.dev#Allnet%20Telegram%3A%40ultrasurf_12",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-269ms-VLESS",
+    "latency": 269,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://949e6151-6899-4605-f2d1-51570f60d51d@65.109.208.107:2083?mode=gun&security=reality&encryption=none&pbk=mDWXgatiJqUc4fmeDQqGusEBIhjFVrQ85y_ZUfNpFV8&fp=firefox&spx=%2F&type=grpc&serviceName=melov2ray&sni=khamenei.ir&sid=54602915a7#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[FI]\ud83c\uddeb\ud83c\uddee-274ms-VLESS",
+    "latency": 274,
+    "country_code": "FI",
+    "country_name": "Finland",
+    "isp": "Hetzner Online GmbH"
+  },
+  {
+    "config": "vless://3956dd35-4f86-4b48-a1ca-45a3dbe471a0@51.222.86.7:51952?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-304ms-VLESS",
+    "latency": 304,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "OVH SAS"
+  },
+  {
+    "config": "vless://527b6060-bf7c-41cc-a9bb-357bcda16a62@server271816966957306554.tas-bazi.com:443?mode=stream-one&path=%2Ffrf&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-321ms-VLESS",
+    "latency": 321,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.223.115:8443?mode=auto&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-351ms-VLESS",
+    "latency": 351,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://89ba9206-305a-4dbf-bd62-9144c1b0e0c4@www.speedtest.net:2095?path=%2Fhajmi%3Fed%3D2050&security=none&encryption=none&host=dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Nb-Fi.85858599.xYz.&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-355ms-VLESS",
+    "latency": 355,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vmess://eyJhZGQiOiIxOTUuMTgyLjM4LjE2OCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI2Y2JmNGM2NC1mMjkwLTRkOGQtZWU2My1mZTczOTEwYmZhOWUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjE3ODM2IiwicHMiOiJWMnJheU5HIHggfCDZh9mF2Ycg2KfZvtix2KfYqtmI2LHZh9inIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
+    "protocol": "vmess",
+    "name": "[IR]\ud83c\uddee\ud83c\uddf7-364ms-VMESS",
+    "latency": 364,
+    "country_code": "IR",
+    "country_name": "Iran",
+    "isp": "Padideh Sazan Poshtvar Co. PJS"
+  },
+  {
+    "config": "vless://0e3677c8-3512-4961-ddfc-42fde6803f58@151.101.3.8:80?mode=auto&path=%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%3Fed%3D2048&security=none&encryption=none&host=Mahsazxshop.org&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-423ms-VLESS",
+    "latency": 423,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://1c22f9ec-4677-4a53-921a-a87c63df37d5@15.204.199.122:57403?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[US]\ud83c\uddfa\ud83c\uddf8-467ms-VLESS",
+    "latency": 467,
+    "country_code": "US",
+    "country_name": "United States",
+    "isp": "OVH SAS"
+  },
+  {
+    "config": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M%3D@141.98.101.182:443#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[N/A]\u2753-515ms-SS",
+    "latency": 515,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.183.30:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-526ms-VLESS",
+    "latency": 526,
     "country_code": "DE",
     "country_name": "Germany",
     "isp": "Parsonline"
   },
   {
-    "config": "vless://8aa48fb3-9429-4029-8dd4-4ba7fe15ad01@www.speedtest.net:8880?path=%2F%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config%3Fed%3D8880&security=none&encryption=none&host=www.website-shop.ir&type=httpupgrade#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1122ms-VLESS",
-    "latency": 1122,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://decb4fce-bd8a-4d8b-a81f-2e393ee9ee02@162.19.250.162:24209?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1148ms-VLESS",
-    "latency": 1148,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "OVH SAS"
-  },
-  {
-    "config": "vless://82cdcdf0-e772-4d9a-b0a2-d6b605572ac1@mOoDy-LoCk.SEotoolSfOrYOU.Co.uK:80?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1261ms-VLESS",
-    "latency": 1261,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpPMExKaFdjM2MwWkQ5Y3RiNEhXR1NP@89.185.84.185:443#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptU1FpdVQ1alIxN255V2djWE9QclRX@77.105.166.12:8594#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "ss",
-    "name": "[GB]\ud83c\uddec\ud83c\udde7-1292ms-SS",
-    "latency": 1292,
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "isp": "Global Connectivity Solutions LLP"
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUUnRmVjZydUJwRFJ4QVV5aWpmdHZE@77.105.166.12:8594#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-1293ms-SS",
-    "latency": 1293,
+    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-533ms-SS",
+    "latency": 533,
     "country_code": "FR",
     "country_name": "France",
     "isp": "Aeza International LTD"
   },
   {
-    "config": "vless://a2af50d9-09c7-4a44-90d0-42da35923e9e@communal-loss.oneeat.co:80?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1324ms-VLESS",
-    "latency": 1324,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://6f690965-3be3-43bb-9331-3ead6efb20aa@104.18.26.90:80?path=%2F%3Fed%3D2560%2F%3F%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps&security=none&encryption=none&host=sib.sibzamini.dpdns.org&type=ws#https%3A%2F%2Ft.me%2Fvip_vpn_2022",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1344ms-VLESS",
-    "latency": 1344,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://e66beedb-dd44-47f0-baf8-7ba947d919d0@91.99.85.185:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1359ms-VLESS",
-    "latency": 1359,
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwdXpuR1l4eUpGNU95T3ZCUldYNTJn@91.99.173.67:9007#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-596ms-SS",
+    "latency": 596,
     "country_code": "DE",
     "country_name": "Germany",
-    "isp": "Hetzner Online GmbH"
+    "isp": "Parsonline"
   },
   {
     "config": "vless://edb4c373-ac92-4430-8f42-94439ca829b9@magical-fish.seotoolsforyou.co.uk:80?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1382ms-VLESS",
-    "latency": 1382,
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-716ms-VLESS",
+    "latency": 716,
     "country_code": "CA",
     "country_name": "Canada",
     "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@128.140.95.33:2020?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-717ms-VLESS",
+    "latency": 717,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "Hetzner Online GmbH"
+  },
+  {
+    "config": "vless://30f2d443-af46-4dd6-83c9-b5e17299ebd2@160.153.0.32:443?path=%2F%3FJoin---MARAMBASHI---Join---MARAMBASHI---Join---MARAMBASHI---Join---MARAMBASHI%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=carlotta.shoorekeeper.cloudns.org&type=ws&sni=carlotta.shoorekeeper.cloudns.org#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[US]\ud83c\uddfa\ud83c\uddf8-725ms-VLESS",
+    "latency": 725,
+    "country_code": "US",
+    "country_name": "United States",
+    "isp": "Cloudflare London, LLC"
+  },
+  {
+    "config": "vless://70d7aa22-1078-4e69-80c2-a37fb329f277@gem.talashit.com:8282?security=none&encryption=none&host=cloudflare.com&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-741ms-VLESS",
+    "latency": 741,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "Hetzner Online GmbH"
   },
   {
     "config": "vless://9eca9c74-951c-4947-c108-72c0ae70a74a@www.speedtest.net:80?path=%2Folem%2Fws%3Fed%3D1024&security=none&encryption=none&host=fin.channel.digicyber.click&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1415ms-VLESS",
-    "latency": 1415,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.181:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-1435ms-VLESS",
-    "latency": 1435,
-    "country_code": "FR",
-    "country_name": "France",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vless://401374e6-df77-41fb-f638-dad8184f175b@103.133.1.227:443?mode=gun&security=tls&encryption=none&type=grpc&sni=pqh24v3.hiddendom.shop#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[N/A]\u2753-1447ms-VLESS",
-    "latency": 1447,
+    "name": "[N/A]\u2753-754ms-VLESS",
+    "latency": 754,
     "country_code": "N/A",
     "country_name": "Unknown",
     "isp": "Unknown ISP"
   },
   {
-    "config": "vless://d1e44075-8c92-4698-9db0-e71d7015b757@small-meal.oneeat.co:80?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "config": "vless://3f9f37a6-8d0c-4ccc-9449-a533db0eacaa@165.22.76.53:8710?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-1503ms-VLESS",
-    "latency": 1503,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.87.175.171:8080#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-1514ms-SS",
-    "latency": 1514,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "SBL-OSL"
-  },
-  {
-    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.90:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[N/A]\u2753-1551ms-VLESS",
-    "latency": 1551,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "vless://9e769ce1-34be-4e3f-b0a6-823f30eb8f69@92.118.233.42:2082?security=none&encryption=none&host=%2F%40HiByeVPNN&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[N/A]\u2753-1553ms-VLESS",
-    "latency": 1553,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGM25ZNzNkaTVvbldWM2dvdGJwSTBR@83.147.216.70:64519#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[FI]\ud83c\uddeb\ud83c\uddee-1570ms-SS",
-    "latency": 1570,
-    "country_code": "FI",
-    "country_name": "Finland",
-    "isp": "Aeza International LTD"
-  },
-  {
-    "config": "vless://TELEGRAM-CONFiGLiNE@172.66.40.99:80?path=%2Ftelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D80&security=none&encryption=none&host=FanG.MotOrphrotan.ir.&type=httpupgrade#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1574ms-VLESS",
-    "latency": 1574,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://527b6060-bf7c-41cc-a9bb-357bcda16a62@server271816966957306554.tas-bazi.com:443?mode=stream-one&path=%2Ffrf&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1598ms-VLESS",
-    "latency": 1598,
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-764ms-VLESS",
+    "latency": 764,
     "country_code": "DE",
     "country_name": "Germany",
-    "isp": "Hetzner Online AG"
-  },
-  {
-    "config": "vless://e11e467c-415c-4545-8973-f7d4cae6bccf@213.176.65.192:443?path=%2Flogin%2Fazaronline.com%2F%3Fed%3D2560&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&fp=chrome&type=httpupgrade&sni=mehrab.mojtabajeab.ir#V2rayNG%20x%20%7C%20%D9%87%D9%85%D9%87%20%D8%A7%D9%BE%D8%B1%D8%A7%D8%AA%D9%88%D8%B1%D9%87%D8%A7",
-    "protocol": "vless",
-    "name": "[N/A]\u2753-1599ms-VLESS",
-    "latency": 1599,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "vless://b42fc0c6-beff-43ee-9bf7-0f9a4688120b@5.75.206.90:8440?security=none&encryption=none&host=telewebion.com&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1606ms-VLESS",
-    "latency": 1606,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Hetzner Online GmbH"
+    "isp": "DigitalOcean, LLC"
   },
   {
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxbGlkWGtKeVN1bngzd1FIVk9pU0hw@217.144.190.50:11811#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "ss",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1614ms-SS",
-    "latency": 1614,
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-766ms-SS",
+    "latency": 766,
     "country_code": "DE",
     "country_name": "Germany",
     "isp": "Aeza International LTD"
   },
   {
-    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.132.59:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "config": "vless://7f09e7b4-4680-4653-a2da-307d110b6961@fAmoUS-EXpERiENcE.seOtOoLsforyou.cO.Uk:80?path=%2F&security=&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1648ms-VLESS",
-    "latency": 1648,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Hetzner Online GmbH"
-  },
-  {
-    "config": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M%3D@141.98.101.182:443#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[GB]\ud83c\uddec\ud83c\udde7-1688ms-SS",
-    "latency": 1688,
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "isp": "M247 Europe SRL"
-  },
-  {
-    "config": "vless://0fc95877-cdc3-458f-8b00-d554c99ecbfb@cb6.connectbaash.info:4406?security=none&encryption=none&host=www.varzesh3.com&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[N/A]\u2753-1705ms-VLESS",
-    "latency": 1705,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "vless://dbb78c94-9f87-4d7d-b945-2000b60352fd@57.129.132.223:80?path=%2Fvless%2F&security=none&encryption=none&host=---%40External_Net---%40External_Net---%40External_Net---%40External_Net---%40External_Net&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[GB]\ud83c\uddec\ud83c\udde7-1720ms-VLESS",
-    "latency": 1720,
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "isp": "OVH SAS"
-  },
-  {
-    "config": "vless://633f424e-2b11-48da-a6b3-a849dd71456f@45.12.75.242:26424?security=reality&encryption=none&pbk=l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0&headerType=none&fp=chrome&type=tcp&sni=ya.ru&sid=23103e1e#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[RU]\ud83c\uddf7\ud83c\uddfa-1731ms-VLESS",
-    "latency": 1731,
-    "country_code": "RU",
-    "country_name": "Russia",
-    "isp": "Beget LLC"
-  },
-  {
-    "config": "vless://618a6afb-62ce-42be-ffdf-692b1038467b@91.107.163.96:2096?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1736ms-VLESS",
-    "latency": 1736,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Hetzner Online AG"
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXbURoVlNpRGlqN1IyWFJPcjNDbTU1@83.147.216.70:64519#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[FI]\ud83c\uddeb\ud83c\uddee-1738ms-SS",
-    "latency": 1738,
-    "country_code": "FI",
-    "country_name": "Finland",
-    "isp": "Aeza International LTD"
-  },
-  {
-    "config": "vless://e9cae639-8a68-4038-9145-458df42ba577@vipvpn2022.esnpenel.com:2020?type=tcp&path=%2F&host=myket.ir&headerType=http&security=none#tunell-Vip_vpn_2022",
-    "protocol": "vless",
-    "name": "[IR]\ud83c\uddee\ud83c\uddf7-1756ms-VLESS",
-    "latency": 1756,
-    "country_code": "IR",
-    "country_name": "Iran",
-    "isp": "Toosee Ertebatat Damavand"
-  },
-  {
-    "config": "vmess://eyJhZGQiOiIzNy4yMDIuMjI1Ljc0IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImIzNjhhODZlLTZmYmMtNDMxYy05ZjA1LTZlMWZhYjg5Njg1OCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0IjoiNDA1MjEiLCJwcyI6IvCfm6HvuI8gQEZyZWFrQ29uZmlnIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9",
-    "protocol": "vmess",
-    "name": "[IR]\ud83c\uddee\ud83c\uddf7-1767ms-VMESS",
-    "latency": 1767,
-    "country_code": "IR",
-    "country_name": "Iran",
-    "isp": "SHATEL Network"
-  },
-  {
-    "config": "vless://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@168.119.245.178:2020?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1788ms-VLESS",
-    "latency": 1788,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Hetzner Online GmbH"
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.235:8080#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[NL]\ud83c\uddf3\ud83c\uddf1-1800ms-SS",
-    "latency": 1800,
-    "country_code": "NL",
-    "country_name": "The Netherlands",
-    "isp": "Greenhost BV"
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@45.87.175.35:8080#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-1856ms-SS",
-    "latency": 1856,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "SBL-OSL"
-  },
-  {
-    "config": "vmess://eyJhZGQiOiIxMDQuMjEuMy4xODkiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImNjMmQ0Ljg5MDYwMDA0Lnh5eiIsImlkIjoiMmZjMzc3MTMtMzAxNy00OTdlLWZmMmQtOTY1ZjgyNmExOWEzIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiIyMDUzIiwicHMiOiLwn5uh77iPIEBGcmVha0NvbmZpZyIsInNjeSI6ImF1dG8iLCJzbmkiOiJjYzJkNC44OTA2MDAwNC54eXoiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==",
-    "protocol": "vmess",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1880ms-VMESS",
-    "latency": 1880,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://3956dd35-4f86-4b48-a1ca-45a3dbe471a0@51.222.86.7:51952?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-1881ms-VLESS",
-    "latency": 1881,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "OVH SAS"
-  },
-  {
-    "config": "vless://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@78.46.251.109:2020?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-1886ms-VLESS",
-    "latency": 1886,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Hetzner Online GmbH"
-  },
-  {
-    "config": "vmess://eyJhZGQiOiI0NS42Ny4yMzAuNzkiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Ii9KT0tFUlJWUE5fQklBX0NIQU5FTEBKT0tFUlJWUE4iLCJpZCI6IjMxNDE4NWY3LTkzMWQtNDY1Ni05MjJkLTA4NTdlN2FmZDIyNCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMTEwNTIiLCJwcyI6IvCfm6HvuI8gQEZyZWFrQ29uZmlnIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
-    "protocol": "vmess",
-    "name": "[RU]\ud83c\uddf7\ud83c\uddfa-1899ms-VMESS",
-    "latency": 1899,
-    "country_code": "RU",
-    "country_name": "Russia",
-    "isp": "UFO Hosting LLC"
-  },
-  {
-    "config": "vless://1c7fcc38-e6be-43c5-875f-b8de2516b9f2@5.182.38.91:17267?security=reality&encryption=none&pbk=SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=4ae260#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[HU]\u2753-1952ms-VLESS",
-    "latency": 1952,
-    "country_code": "HU",
-    "country_name": "Hungary",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vless://0077f357-40b8-4496-8ff6-3f012bdb2eaa@server581122609014369419.tas-bazi.com:443?mode=stream-one&path=%2Fsc&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-2054ms-VLESS",
-    "latency": 2054,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Hetzner Online AG"
-  },
-  {
-    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.181.47:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-2092ms-VLESS",
-    "latency": 2092,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Hetzner Online GmbH"
-  },
-  {
-    "config": "vless://9ceb4327-952c-4d87-981c-d933bd81ced9@81.12.21.147:443?security=none&encryption=none&headerType=none&type=tcp#V2rayNG%20x%20%7C%20%D9%87%D9%85%D9%87%20%D8%A7%D9%BE%D8%B1%D8%A7%D8%AA%D9%88%D8%B1%D9%87%D8%A7",
-    "protocol": "vless",
-    "name": "[IR]\ud83c\uddee\ud83c\uddf7-2108ms-VLESS",
-    "latency": 2108,
-    "country_code": "IR",
-    "country_name": "Iran",
-    "isp": "Soroush Rasanheh Company Ltd"
-  },
-  {
-    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.253:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-2112ms-VLESS",
-    "latency": 2112,
-    "country_code": "FR",
-    "country_name": "France",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vmess://eyJhZGQiOiI0NS42Ny4yMzAuNzkiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiMzE0MTg1ZjctOTMxZC00NjU2LTkyMmQtMDg1N2U3YWZkMjI0IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxMTA1MiIsInBzIjoi8J+boe+4jyBARnJlYWtDb25maWciLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
-    "protocol": "vmess",
-    "name": "[RU]\ud83c\uddf7\ud83c\uddfa-2120ms-VMESS",
-    "latency": 2120,
-    "country_code": "RU",
-    "country_name": "Russia",
-    "isp": "UFO Hosting LLC"
-  },
-  {
-    "config": "vless://4d794980-54c0-4fcb-8def-c2beaecadbad@172.66.44.81:2083?path=%2F&security=tls&encryption=none&type=ws&sni=azadnet05.pages.dev#Allnet%20Telegram%3A%40ultrasurf_12",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-2166ms-VLESS",
-    "latency": 2166,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206R1dNYjRRcEcrbzJkeUc3UU96aS9sYXpqOHY1RTFvV2lWTC9UM0NMSFU0ST06NUxBU0wwa3pQdHo4VW1KbWVoK1NrekpvL1NQdDRhTkMrN01GbnRjSVc1RT0%3D@80.209.239.158:53755#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[LT]\u2753-2193ms-SS",
-    "latency": 2193,
-    "country_code": "LT",
-    "country_name": "Lithuania",
-    "isp": "UAB \"Interneto vizija\""
-  },
-  {
-    "config": "vless://401374e6-df77-41fb-f638-dad8184f175b@45.8.211.71:443?mode=gun&security=tls&alpn=h2&encryption=none&type=grpc&sni=pqh24v3.hiddendom.shop#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[SG]\ud83c\uddf8\ud83c\uddec-2229ms-VLESS",
-    "latency": 2229,
-    "country_code": "SG",
-    "country_name": "Singapore",
-    "isp": "Cloudflare London, LLC"
-  },
-  {
-    "config": "vless://361931d8-36d6-4887-bea8-82ae64d53627@46.31.79.23:50168?security=&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[TR]\ud83c\uddf9\ud83c\uddf7-2230ms-VLESS",
-    "latency": 2230,
-    "country_code": "TR",
-    "country_name": "T\u00fcrkiye",
-    "isp": "Teknosos Bilisim Hizmetleri VE Tic. Ltd. Sti."
-  },
-  {
-    "config": "vless://dc58f214-4227-4f58-8090-cbcedf1adeba@holkanas.atroart.ir:25936?security=none&encryption=none&host=canva.com&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-2241ms-VLESS",
-    "latency": 2241,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Leaseweb DE"
-  },
-  {
-    "config": "vless://0e3677c8-3512-4961-ddfc-42fde6803f58@151.101.3.8:80?mode=auto&path=%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%2F%40XpnTeam%3Fed%3D2048&security=none&encryption=none&host=Mahsazxshop.org&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-2273ms-VLESS",
-    "latency": 2273,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "Fastly, Inc."
-  },
-  {
-    "config": "vmess://eyJhZGQiOiIxNzIuNjYuNDAuOTkiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InoubG9vbG9vbG9vbG9vLmNvbSIsImlkIjoiMS10ZWxlZ3JhbS1pZC12cG5mMjIiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdGVsZWdyYW0tdjJib3h2Mix0ZWxlZ3JhbS12MmJveHYyLHRlbGVncmFtLXYyYm94djIsdGVsZWdyYW0tdjJib3h2Mix0ZWxlZ3JhbS12MmJveHYyLHRlbGVncmFtLXYyYm94djIsdGVsZWdyYW0tdjJib3h2Mix0ZWxlZ3JhbS12MmJveHYyLHRlbGVncmFtLXYyYm94djIsdGVsZWdyYW0tdjJib3h2Mix0ZWxlZ3JhbS12MmJveHYyLHRlbGVncmFtLXYyYm94djIsdGVsZWdyYW0tdjJib3h2Mix0ZWxlZ3JhbS12MmJveHYyIiwicG9ydCI6IjgwIiwicHMiOiLwn5uh77iPIEBGcmVha0NvbmZpZyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==",
-    "protocol": "vmess",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-2309ms-VMESS",
-    "latency": 2309,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://57a5d042-6618-4042-a2de-1a2169c4ce9d@165.227.244.151:1419?security=reality&encryption=none&pbk=0L-XvEVE4KLbDk-evkkxEWK3y-Nkz0E181t0PD_o4h4&headerType=none&fp=firefox&spx=%2F&type=tcp&sni=journalofbigdata.springeropen.com&sid=ae439107157c97#Allnet%20Telegram%3A%40ultrasurf_12",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-2314ms-VLESS",
-    "latency": 2314,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "DigitalOcean, LLC"
-  },
-  {
-    "config": "vless://27f2ce3b-7488-4078-8887-b9c129bddc3f@86.48.24.154:5900?security=none&encryption=none&host=%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-2318ms-VLESS",
-    "latency": 2318,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "Nubes, LLC"
-  },
-  {
-    "config": "vless://49d6d5dd-bc9b-4ff9-ade9-3b9c25ca5f25@ipw.gfdv54cvghhgfhgj-njhgj64.info:2096?path=%2Fcitxcbws&security=tls&encryption=none&host=638890562127857314.amsterdam-prx-dnraaal.info&type=ws&sni=638890562127857314.amsterdam-prx-dnraaal.info#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-2349ms-VLESS",
-    "latency": 2349,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://16f7d18c-03b2-4cfa-8e2e-52d6f12c822c@138.68.80.111:443?mode=gun&security=reality&encryption=none&pbk=GikS1jaIrS5BR7D3EObm-o-AMdUaMtmPlkLdUzXH8mM&fp=chrome&spx=%2F&type=grpc&serviceName=%40DARK_VPNir-%40DARK_VPNir-%40DARK_VPNir-%40DARK_VPNir-%40DARK_VPNir-%40DARK_VPNir-%40DARK_VPNir-%40DARK_VPNir-&sni=tgju.org&sid=19c8906f#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-2369ms-VLESS",
-    "latency": 2369,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "DigitalOcean, LLC"
-  },
-  {
-    "config": "trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2F%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram-%40CanfigVipTelgram&security=tls&host=vpn.stupidworld.web.id&fp=chrome&type=ws&sni=vpn.stupidworld.web.id#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "trojan",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-2382ms-TROJAN",
-    "latency": 2382,
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-794ms-VLESS",
+    "latency": 794,
     "country_code": "CA",
     "country_name": "Canada",
     "isp": "Cloudflare, Inc."
@@ -974,35 +281,593 @@
   {
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwYmdSajRGVlR1WXNLeTRwQm1hcnF3@h110vpnnl.outlinekeys.net:52571#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "ss",
-    "name": "[NL]\ud83c\uddf3\ud83c\uddf1-2398ms-SS",
-    "latency": 2398,
-    "country_code": "NL",
-    "country_name": "The Netherlands",
-    "isp": "Global Connectivity Solutions LLP"
+    "name": "[N/A]\u2753-833ms-SS",
+    "latency": 833,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
   },
   {
-    "config": "vless://c372b7b3-f0b9-4769-fef8-f2a1e3f293c3@171.22.173.206:28931?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-2433ms-VLESS",
-    "latency": 2433,
-    "country_code": "DE",
-    "country_name": "Germany",
-    "isp": "Massivegrid LTD"
+    "config": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M%3D@141.98.101.181:443#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[GB]\ud83c\uddec\ud83c\udde7-857ms-SS",
+    "latency": 857,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "isp": "M247 Europe SRL"
   },
   {
-    "config": "vless://d03d8815-a06f-408f-a62f-6c84869b96a9@elegant-corporation.seotoolsforyou.co.uk:80?path=%2F&security=none&encryption=none&type=ws#Allnet%20Telegram%3A%40ultrasurf_12",
+    "config": "trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2FStupid-World%2F103.106.228.126-2053&security=tls&host=vpn.stupidworld.web.id&fp=chrome&type=ws&sni=vpn.stupidworld.web.id#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "trojan",
+    "name": "[N/A]\u2753-861ms-TROJAN",
+    "latency": 861,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://82cdcdf0-e772-4d9a-b0a2-d6b605572ac1@mOoDy-LoCk.SEotoolSfOrYOU.Co.uK:80?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-2482ms-VLESS",
-    "latency": 2482,
+    "name": "[N/A]\u2753-873ms-VLESS",
+    "latency": 873,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://49d6d5dd-bc9b-4ff9-ade9-3b9c25ca5f25@ipw.gfdv54cvghhgfhgj-njhgj64.info:2096?path=%2Fcitxcbws&security=tls&encryption=none&host=638890562127857314.amsterdam-prx-dnraaal.info&type=ws&sni=638890562127857314.amsterdam-prx-dnraaal.info#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-877ms-VLESS",
+    "latency": 877,
     "country_code": "CA",
     "country_name": "Canada",
     "isp": "Cloudflare, Inc."
   },
   {
+    "config": "vless://9eca9c74-951c-4947-c108-72c0ae70a74a@chat.deepseek.com:80?path=%2Folem%2Fws%3Fed%3D1024&security=none&encryption=none&host=fin.channel.digicyber.click&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-892ms-VLESS",
+    "latency": 892,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.139:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-903ms-VLESS",
+    "latency": 903,
+    "country_code": "FR",
+    "country_name": "France",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "vless://92f481b6-ad92-43e4-a683-2bb0aeaa9846@104.18.26.90:80?path=%2F%3Fed%3D2590&security=none&encryption=none&host=dw.alibichareh.dpdns.org&type=ws#https%3A%2F%2Ft.me%2Fvip_vpn_2022",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-1000ms-VLESS",
+    "latency": 1000,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://TELEGRAM-CONFiGLiNE@172.66.40.99:8880?path=%2Ftelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D8880&security=none&encryption=none&host=usnew.motorphrotan.ir.&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-1014ms-VLESS",
+    "latency": 1014,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://9e769ce1-34be-4e3f-b0a6-823f30eb8f69@95.164.18.5:2052?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[GB]\ud83c\uddec\ud83c\udde7-1046ms-VLESS",
+    "latency": 1046,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "vmess://eyJhZGQiOiJucG1qcy5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImQzbTF4dms1MGstNTI1MzQwMTczLnphbWFtLmNvIiwiaWQiOiJkM20xeHZrNTBrIiwibmV0Ijoid3MiLCJwYXRoIjoiL2Rvd25sb2FkL2NkbiIsInBvcnQiOiI4MDgwIiwicHMiOiLwn5uh77iPIEBGcmVha0NvbmZpZyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==",
+    "protocol": "vmess",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-1055ms-VMESS",
+    "latency": 1055,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@45.144.49.140:57456#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[N/A]\u2753-1060ms-SS",
+    "latency": 1060,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://57a5d042-6618-4042-a2de-1a2169c4ce9d@165.227.244.151:1419?security=reality&encryption=none&pbk=0L-XvEVE4KLbDk-evkkxEWK3y-Nkz0E181t0PD_o4h4&headerType=none&fp=firefox&spx=%2F&type=tcp&sni=journalofbigdata.springeropen.com&sid=ae439107157c97#Allnet%20Telegram%3A%40ultrasurf_12",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-1083ms-VLESS",
+    "latency": 1083,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "DigitalOcean, LLC"
+  },
+  {
+    "config": "vless://89ba9206-305a-4dbf-bd62-9144c1b0e0c4@www.speedtest.net:2095?path=%2Fhajmi%3Fed%3D2050&security=none&encryption=none&host=dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Nb-De.85858599.xYz.&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-1109ms-VLESS",
+    "latency": 1109,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
     "config": "vless://a34663ca-4f10-4ba5-b9fe-d81e4766cacc@opening-hours.nz:80?path=%2F%40vmessorg----%40vmessorg-----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg%3Fed%3D2480&security=none&encryption=none&host=join-to-Vmessorg.sabadyt.ir&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-2484ms-VLESS",
-    "latency": 2484,
+    "name": "[N/A]\u2753-1116ms-VLESS",
+    "latency": 1116,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.99:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-1133ms-VLESS",
+    "latency": 1133,
+    "country_code": "FR",
+    "country_name": "France",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "vless://27f2ce3b-7488-4078-8887-b9c129bddc3f@86.48.24.154:5900?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[US]\ud83c\uddfa\ud83c\uddf8-1191ms-VLESS",
+    "latency": 1191,
+    "country_code": "US",
+    "country_name": "United States",
+    "isp": "Nubes, LLC"
+  },
+  {
+    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.94:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-1254ms-VLESS",
+    "latency": 1254,
+    "country_code": "FR",
+    "country_name": "France",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "vless://8aa48fb3-9429-4029-8dd4-4ba7fe15ad01@www.speedtest.net:8880?path=%2F%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config-%40Alfred_Config%3Fed%3D8880&security=none&encryption=none&host=www.website-shop.ir&type=httpupgrade#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-1285ms-VLESS",
+    "latency": 1285,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://81294d12-9b29-438d-8af2-2bfcba7bd450@91.99.115.113:2012?security=reality&encryption=none&pbk=I9RNJ9pJ1WzWsYnRFk7u1XWsFhWBS03iUDjQXwWsERY&host=%2FBIA_CHANEL%40JOKERRVPN&headerType=none&fp=firefox&spx=%2FCopy-az-chahnnel-JOKERRVPN&type=tcp&sni=www.pcmag.com#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-1307ms-VLESS",
+    "latency": 1307,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "Parsonline"
+  },
+  {
+    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.90:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-1330ms-VLESS",
+    "latency": 1330,
+    "country_code": "FR",
+    "country_name": "France",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "vless://491e4f76-42f0-43a7-a987-25072a68d5e4@hopeful-appointment.seotoolsforyou.co.uk:80?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-1376ms-VLESS",
+    "latency": 1376,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://30f2d443-af46-4dd6-83c9-b5e17299ebd2@104.26.15.69:2096?path=%2Fproxyip%3Dzani.yaemiko.ggff.net&security=tls&alpn=http%2F1.1&encryption=none&host=carlotta.shoorekeeper.cloudns.org&fp=randomized&type=ws&sni=carlotta.shoorekeeper.cloudns.org#Allnet%20Telegram%3A%40ultrasurf_12",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-1449ms-VLESS",
+    "latency": 1449,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHVElaWEdvZTB3a3Q%3D@31.129.22.32:443#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[PT]\u2753-1506ms-SS",
+    "latency": 1506,
+    "country_code": "PT",
+    "country_name": "Portugal",
+    "isp": "Global Connectivity Solutions LLP"
+  },
+  {
+    "config": "vless://b3a0f19f-b0f9-4a96-95de-49c5c5a725e0@abdzgg.teemazad.com:37062?security=none&encryption=none&host=Zvtm62fo.divarcdn.com&headerType=http&type=tcp#V2rayNG%20x%20%7C%20%D9%87%D9%85%D9%87%20%D8%A7%D9%BE%D8%B1%D8%A7%D8%AA%D9%88%D8%B1%D9%87%D8%A7",
+    "protocol": "vless",
+    "name": "[NL]\ud83c\uddf3\ud83c\uddf1-1516ms-VLESS",
+    "latency": 1516,
+    "country_code": "NL",
+    "country_name": "The Netherlands",
+    "isp": "Turunc Smart Bilgisayar Teknoloji Ve Dis Ticaret Limited Sirketi"
+  },
+  {
+    "config": "vmess://eyJhZGQiOiIzNy4yMDIuMjI1Ljc0IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImIzNjhhODZlLTZmYmMtNDMxYy05ZjA1LTZlMWZhYjg5Njg1OCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0IjoiNDA1MjEiLCJwcyI6IvCfm6HvuI8gQEZyZWFrQ29uZmlnIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9",
+    "protocol": "vmess",
+    "name": "[IR]\ud83c\uddee\ud83c\uddf7-1517ms-VMESS",
+    "latency": 1517,
+    "country_code": "IR",
+    "country_name": "Iran",
+    "isp": "SHATEL Network"
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpPMExKaFdjM2MwWkQ5Y3RiNEhXR1NP@89.185.84.185:443#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[N/A]\u2753-1536ms-SS",
+    "latency": 1536,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://170ba974-6ae5-44ae-dfdc-4675b5643f34@79.137.33.139:16390?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-1539ms-VLESS",
+    "latency": 1539,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@78.46.251.109:2020?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-1577ms-VLESS",
+    "latency": 1577,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "Hetzner Online GmbH"
+  },
+  {
+    "config": "vless://6f690965-3be3-43bb-9331-3ead6efb20aa@104.18.26.90:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=sib.sibzamini.dpdns.org&type=ws#https%3A%2F%2Ft.me%2Fvip_vpn_2022",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-1617ms-VLESS",
+    "latency": 1617,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://9ceb4327-952c-4d87-981c-d933bd81ced9@81.12.21.147:443?security=none&encryption=none&headerType=none&type=tcp#V2rayNG%20x%20%7C%20%D9%87%D9%85%D9%87%20%D8%A7%D9%BE%D8%B1%D8%A7%D8%AA%D9%88%D8%B1%D9%87%D8%A7",
+    "protocol": "vless",
+    "name": "[IR]\ud83c\uddee\ud83c\uddf7-1619ms-VLESS",
+    "latency": 1619,
+    "country_code": "IR",
+    "country_name": "Iran",
+    "isp": "Soroush Rasanheh Company Ltd"
+  },
+  {
+    "config": "vless://8dbb26f8-8832-46bc-bc0c-a2f17d8d200f@15.204.236.64:24820?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[US]\ud83c\uddfa\ud83c\uddf8-1631ms-VLESS",
+    "latency": 1631,
+    "country_code": "US",
+    "country_name": "United States",
+    "isp": "OVH SAS"
+  },
+  {
+    "config": "vless://89ba9206-305a-4dbf-bd62-9144c1b0e0c4@206.71.158.75:465?mode=auto&security=reality&encryption=none&pbk=-3FYNptvHNKGKULt4jOkSqSfBbpl9ef_ijzo_8I7OXk&host=smtp.zoho.com&fp=firefox&spx=%2F&type=xhttp&sni=smtp.zoho.com&sid=7f2798f9#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[NL]\ud83c\uddf3\ud83c\uddf1-1633ms-VLESS",
+    "latency": 1633,
+    "country_code": "NL",
+    "country_name": "The Netherlands",
+    "isp": "Macarne LLC"
+  },
+  {
+    "config": "vmess://eyJhZGQiOiIyMTYuMTczLjY5LjI1MCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI5MTM4MjA5Mi0yMzMwLTQ1NWItOGExYy05YzEyOWNmZTY2MWEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6Ijg0NDMiLCJwcyI6IvCfm6HvuI8gQEZyZWFrQ29uZmlnIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9",
+    "protocol": "vmess",
+    "name": "[LV]\u2753-1642ms-VMESS",
+    "latency": 1642,
+    "country_code": "LV",
+    "country_name": "Latvia",
+    "isp": "SIA VEESP"
+  },
+  {
+    "config": "vless://6f690965-3be3-43bb-9331-3ead6efb20aa@104.18.26.90:80?path=%2F%3Fed%3D2560%2F%3F%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps----%40Rk_Vps&security=none&encryption=none&host=sib.sibzamini.dpdns.org&type=ws#https%3A%2F%2Ft.me%2Fvip_vpn_2022",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-1644ms-VLESS",
+    "latency": 1644,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://telegram-id-Arfilter@172.66.40.99:443?path=%2Ftelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%3Fed%3D2048&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=ePi.SpEeDtEsT2029.CoM&fp=firefox&type=ws&sni=ePi.SpEeDtEsT2029.CoM#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-1651ms-VLESS",
+    "latency": 1651,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@45.82.251.78:8880?mode=gun&security=none&encryption=none&authority=sinvt-sinvt&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[US]\ud83c\uddfa\ud83c\uddf8-1656ms-VLESS",
+    "latency": 1656,
+    "country_code": "US",
+    "country_name": "United States",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@185.231.233.173:990#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[PT]\u2753-1657ms-SS",
+    "latency": 1657,
+    "country_code": "PT",
+    "country_name": "Portugal",
+    "isp": "BrainStorm Network, Inc"
+  },
+  {
+    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.132.59:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-1659ms-VLESS",
+    "latency": 1659,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "Hetzner Online GmbH"
+  },
+  {
+    "config": "vless://1b135c37-a20e-4716-c0f1-b2572dc45127@91.98.21.58:18606?mode=gun&security=reality&encryption=none&pbk=9C5_X-zVkO-NpXUO1FCNkQOIaoC3WmudlbiMHtCC4Ew&fp=chrome&spx=%2F&type=grpc&serviceName=%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android%2FTelegram%2C%40Archive_Android&sni=www.cdn77.com#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-1689ms-VLESS",
+    "latency": 1689,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "CLOUD-NBG"
+  },
+  {
+    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.181.47:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-1723ms-VLESS",
+    "latency": 1723,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "Hetzner Online GmbH"
+  },
+  {
+    "config": "vmess://eyJhZGQiOiJwYW5lbDMuaXB5YXIub3JnIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImMwY2NkZWI5LTc4NGMtNGQ2Ny1iOTA0LTIwZGNhYWM5OTAyYSIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMzIwMTciLCJwcyI6IkFsbG5ldCBUZWxlZ3JhbTpAdWx0cmFzdXJmXzEyIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
+    "protocol": "vmess",
+    "name": "[N/A]\u2753-1742ms-VMESS",
+    "latency": 1742,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://d1e44075-8c92-4698-9db0-e71d7015b757@small-meal.oneeat.co:80?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[US]\ud83c\uddfa\ud83c\uddf8-1743ms-VLESS",
+    "latency": 1743,
+    "country_code": "US",
+    "country_name": "United States",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1MXlsb1FDOEQ5dzFXYWU3Rkh0STY1@20.91.252.21:48172#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[SE]\ud83c\uddf8\ud83c\uddea-1787ms-SS",
+    "latency": 1787,
+    "country_code": "SE",
+    "country_name": "Sweden",
+    "isp": "Microsoft Corporation"
+  },
+  {
+    "config": "vless://361931d8-36d6-4887-bea8-82ae64d53627@46.31.79.23:50168?security=&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[TR]\ud83c\uddf9\ud83c\uddf7-1881ms-VLESS",
+    "latency": 1881,
+    "country_code": "TR",
+    "country_name": "T\u00fcrkiye",
+    "isp": "Teknosos Bilisim Hizmetleri VE Tic. Ltd. Sti."
+  },
+  {
+    "config": "vless://ca9c98f8-9d27-43bc-8dfd-ede3efcc4cfc@gr.dnszone.top:45500?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-1887ms-VLESS",
+    "latency": 1887,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "DigitalOcean, LLC"
+  },
+  {
+    "config": "vless://12fd53ec-9184-41a0-8ab5-1910ad8d6e8d@gr.dnszone.top:45500?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-1894ms-VLESS",
+    "latency": 1894,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "DigitalOcean, LLC"
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2OU1VaWk3VkR3TXFoN0h6@admin.c4.webramz.co:443#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[N/A]\u2753-1941ms-SS",
+    "latency": 1941,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://b6a617b7-758e-4639-b2f4-d296c0f1b03e@51.75.246.193:2052?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-2005ms-VLESS",
+    "latency": 2005,
+    "country_code": "FR",
+    "country_name": "France",
+    "isp": "OVH SAS"
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3T3J2TDBKSDlmMkx2SUU0NU1UN1dO@77.105.166.12:8594#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-2017ms-SS",
+    "latency": 2017,
+    "country_code": "FR",
+    "country_name": "France",
+    "isp": "Aeza International LTD"
+  },
+  {
+    "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@45.82.251.78:8880?mode=gun&security=&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-2048ms-VLESS",
+    "latency": 2048,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://a2af50d9-09c7-4a44-90d0-42da35923e9e@communal-loss.oneeat.co:80?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[US]\ud83c\uddfa\ud83c\uddf8-2057ms-VLESS",
+    "latency": 2057,
+    "country_code": "US",
+    "country_name": "United States",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://2ac2a3ac-49ec-4cf1-90fd-252b7fad9fbe@51.195.119.204:80?path=%2Fvless%2F&security=&encryption=none&host=---%40External_Net---%40External_Net---%40External_Net---%40External_Net---%40External_Net&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-2069ms-VLESS",
+    "latency": 2069,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "OVH SAS"
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.87.175.157:8080#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[N/A]\u2753-2073ms-SS",
+    "latency": 2073,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://7f09e7b4-4680-4653-a2da-307d110b6961@famous-experience.seotoolsforyou.co.uk:80?path=%2F&security=none&encryption=none&type=ws#Allnet%20Telegram%3A%40ultrasurf_12",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-2114ms-VLESS",
+    "latency": 2114,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://b1e76a39-1d89-4c07-f755-dd60839def7e@104.21.112.1:8080?path=%2F%40unlimiteddev----%40unlimiteddev-----%40unlimiteddev----%40unlimiteddev----%40unlimiteddev----%40unlimiteddev----%40unlimiteddev----%40unlimiteddev----%40unlimitedev----%40unlimitedev----%40unlimiteddev----%40unlimiteddev%3Fed%3D2480&security=none&encryption=none&host=join-to-unlimiteddev.sabadyt.ir&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-2118ms-VLESS",
+    "latency": 2118,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://f3af923e-ecfe-46d5-9c27-4ff95f739afe@91.99.216.98:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-2150ms-VLESS",
+    "latency": 2150,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://9e769ce1-34be-4e3f-b0a6-823f30eb8f69@92.118.233.42:2082?security=none&encryption=none&host=%2F%40HiByeVPNN&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[US]\ud83c\uddfa\ud83c\uddf8-2154ms-VLESS",
+    "latency": 2154,
+    "country_code": "US",
+    "country_name": "United States",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@45.87.175.65:8080#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[US]\ud83c\uddfa\ud83c\uddf8-2169ms-SS",
+    "latency": 2169,
+    "country_code": "US",
+    "country_name": "United States",
+    "isp": "SBL-OSL"
+  },
+  {
+    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.98.90:8443?mode=auto&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-2171ms-VLESS",
+    "latency": 2171,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "Hetzner Online GmbH"
+  },
+  {
+    "config": "vless://e9cae639-8a68-4038-9145-458df42ba577@vipvpn2022.esnpenel.com:2020?type=tcp&path=%2F&host=myket.ir&headerType=http&security=none#tunell-Vip_vpn_2022",
+    "protocol": "vless",
+    "name": "[IR]\ud83c\uddee\ud83c\uddf7-2185ms-VLESS",
+    "latency": 2185,
+    "country_code": "IR",
+    "country_name": "Iran",
+    "isp": "Toosee Ertebatat Damavand"
+  },
+  {
+    "config": "vless://653ceeb6-d515-4015-938f-2f8c57f7a978@Www.speedtest.net:2095?path=%2F%40FREE_VPN02%40FREE_VPN02%40FREE_VPN02%40FREE_VPN02&security=none&encryption=none&host=Fi1.vipmehspd.ir.&type=httpupgrade#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-2243ms-VLESS",
+    "latency": 2243,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@45.82.251.122:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[US]\ud83c\uddfa\ud83c\uddf8-2245ms-VLESS",
+    "latency": 2245,
+    "country_code": "US",
+    "country_name": "United States",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "vless://1c7fcc38-e6be-43c5-875f-b8de2516b9f2@5.182.38.91:17267?security=reality&encryption=none&pbk=SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=4ae260#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[HU]\u2753-2259ms-VLESS",
+    "latency": 2259,
+    "country_code": "HU",
+    "country_name": "Hungary",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "vmess://eyJhZGQiOiJtZWxpX3Byb3h5eS52aXAtcGxhbi5vcmciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiMmVkODAyNjYtMGIwYS00NzhjLTg2ZmQtMjc4ZmZiODRjZDQ0IiwibmV0IjoiZ3JwYyIsInBhdGgiOiIiLCJwb3J0IjoiNDQzIiwicHMiOiLwn5uh77iPIEBGcmVha0NvbmZpZyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiZ3VuIiwidiI6IjIifQ==",
+    "protocol": "vmess",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-2259ms-VMESS",
+    "latency": 2259,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "Global Connectivity Solutions LLP"
+  },
+  {
+    "config": "vless://775152cc-c811-496a-b222-d9764146203f@ipw.gfdv54cvghhgfhgj-njhgj64.info:443?path=%2Fldtzopws&security=tls&encryption=none&host=638896723052890046.dezful-prx-dnraaay.info&type=ws&sni=638896723052890046.dezful-prx-dnraaay.info#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-2293ms-VLESS",
+    "latency": 2293,
     "country_code": "CA",
     "country_name": "Canada",
     "isp": "Cloudflare, Inc."
@@ -1010,172 +875,208 @@
   {
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.240:8080#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "ss",
-    "name": "[NL]\ud83c\uddf3\ud83c\uddf1-2491ms-SS",
-    "latency": 2491,
+    "name": "[NL]\ud83c\uddf3\ud83c\uddf1-2314ms-SS",
+    "latency": 2314,
     "country_code": "NL",
     "country_name": "The Netherlands",
     "isp": "Greenhost BV"
   },
   {
-    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.186:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "config": "vless://0077f357-40b8-4496-8ff6-3f012bdb2eaa@server229242717676380726.tas-bazi.com:443?mode=stream-one&path=%2Fsc&security=none&encryption=none&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-2492ms-VLESS",
-    "latency": 2492,
-    "country_code": "FR",
-    "country_name": "France",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vless://fef15ae1-cdc9-42ec-9c76-ea083550fd45@erfwp.fast.hosting-ip.com:80?mode=auto&path=%2Ferfwp%3Fed%3D2048&security=none&encryption=none&host=erfwp.com&type=xhttp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-2526ms-VLESS",
-    "latency": 2526,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "Fastly, Inc."
-  },
-  {
-    "config": "vless://9e769ce1-34be-4e3f-b0a6-823f30eb8f69@95.164.18.5:2052?path=%2F&security=none&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[GB]\ud83c\uddec\ud83c\udde7-2602ms-VLESS",
-    "latency": 2602,
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "isp": "PQ HOSTING PLUS S.R.L."
-  },
-  {
-    "config": "vless://89ba9206-305a-4dbf-bd62-9144c1b0e0c4@206.71.158.75:465?mode=auto&security=reality&encryption=none&pbk=-3FYNptvHNKGKULt4jOkSqSfBbpl9ef_ijzo_8I7OXk&host=smtp.zoho.com&fp=firefox&spx=%2F&type=xhttp&sni=smtp.zoho.com&sid=7f2798f9#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[NL]\ud83c\uddf3\ud83c\uddf1-2629ms-VLESS",
-    "latency": 2629,
-    "country_code": "NL",
-    "country_name": "The Netherlands",
-    "isp": "Macarne LLC"
-  },
-  {
-    "config": "vless://70d7aa22-1078-4e69-80c2-a37fb329f277@gem.talashit.com:8282?security=none&encryption=none&host=cloudflare.com&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-2664ms-VLESS",
-    "latency": 2664,
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-2329ms-VLESS",
+    "latency": 2329,
     "country_code": "DE",
     "country_name": "Germany",
-    "isp": "Hetzner Online GmbH"
+    "isp": "Hetzner Online AG"
   },
   {
-    "config": "vless://30f2d443-af46-4dd6-83c9-b5e17299ebd2@104.26.15.69:2096?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=carlotta.shoorekeeper.cloudns.org&fp=randomized&type=ws&sni=carlotta.shoorekeeper.cloudns.org#Allnet%20Telegram%3A%40ultrasurf_12",
+    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.246:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-2679ms-VLESS",
-    "latency": 2679,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://653ceeb6-d515-4015-938f-2f8c57f7a978@Www.speedtest.net:2095?path=%2F%40FREE_VPN02%40FREE_VPN02%40FREE_VPN02%40FREE_VPN02&security=none&encryption=none&host=Fi1.vipmehspd.ir.&type=httpupgrade#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-2696ms-VLESS",
-    "latency": 2696,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "vless://ca9c98f8-9d27-43bc-8dfd-ede3efcc4cfc@gr.dnszone.top:45500?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[N/A]\u2753-2723ms-VLESS",
-    "latency": 2723,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "vless://7f09e7b4-4680-4653-a2da-307d110b6961@fAmoUS-EXpERiENcE.seOtOoLsforyou.cO.Uk:80?path=%2F&security=&encryption=none&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-2734ms-VLESS",
-    "latency": 2734,
-    "country_code": "CA",
-    "country_name": "Canada",
-    "isp": "Cloudflare, Inc."
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpPanNpSVZaMGU0Y21WUDJQdERqVjd6@45.95.233.46:14123#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-2773ms-SS",
-    "latency": 2773,
+    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-2361ms-VLESS",
+    "latency": 2361,
     "country_code": "FR",
     "country_name": "France",
-    "isp": "Global Connectivity Solutions LLP"
+    "isp": "PQ HOSTING PLUS S.R.L."
   },
   {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@45.87.175.10:8080#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[US]\ud83c\uddfa\ud83c\uddf8-2847ms-SS",
-    "latency": 2847,
-    "country_code": "US",
-    "country_name": "United States",
-    "isp": "SBL-OSL"
-  },
-  {
-    "config": "vmess://eyJhZGQiOiJwYW5lbDEuaXB5YXIub3JnIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImM0YmQ5ZWJhLThhZWEtNGQ1ZS1hMmVlLWI1ZGU2NWFjMTRlMSIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiNDI2ODQiLCJwcyI6IvCfm6HvuI8gQEZyZWFrQ29uZmlnIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
-    "protocol": "vmess",
-    "name": "[N/A]\u2753-2854ms-VMESS",
-    "latency": 2854,
-    "country_code": "N/A",
-    "country_name": "Unknown",
-    "isp": "Unknown ISP"
-  },
-  {
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZWGdTOENvbVRhbTdxb2VzUGx6bE1v@83.147.216.70:64519#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
-    "protocol": "ss",
-    "name": "[FI]\ud83c\uddeb\ud83c\uddee-2865ms-SS",
-    "latency": 2865,
-    "country_code": "FI",
-    "country_name": "Finland",
-    "isp": "Aeza International LTD"
-  },
-  {
-    "config": "vless://170ba974-6ae5-44ae-dfdc-4675b5643f34@79.137.33.139:16390?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "config": "vless://1ad89e52-ed32-4acf-88f7-caeadb4cd493@212.80.31.132:882?security=none&encryption=none&host=skyroom.online%2Cgharar.ir%2Cigap.net%2F%3FBIA_CHANEL%40JOKERRVPN&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-2918ms-VLESS",
-    "latency": 2918,
-    "country_code": "FR",
-    "country_name": "France",
-    "isp": "OVH SAS"
+    "name": "[IR]\ud83c\uddee\ud83c\uddf7-2376ms-VLESS",
+    "latency": 2376,
+    "country_code": "IR",
+    "country_name": "Iran",
+    "isp": "Balouchi"
   },
   {
-    "config": "vless://3f9f37a6-8d0c-4ccc-9449-a533db0eacaa@165.22.76.53:9387?security=none&encryption=none&type=ws#Allnet%20Telegram%3A%40ultrasurf_12",
+    "config": "vless://34c9f621-0614-4b7f-aab3-c4400bb15a89@45.83.20.34:58164?security=reality&encryption=none&pbk=7cbcFHSx2vqz38zW9BmlSIHTTSdNtlgv_S5uZ0MSIAE&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=788456bc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
     "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-2943ms-VLESS",
-    "latency": 2943,
+    "name": "[BE]\u2753-2415ms-VLESS",
+    "latency": 2415,
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "vless://863b3a17-bb45-493b-ad98-898b490e540c@n0.asmdns.net:2082?path=%2F%3Fed%3D2590&security=none&encryption=none&host=n0.asmdns.net&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-2458ms-VLESS",
+    "latency": 2458,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://83b1b380-b0cf-4b4a-910b-154420def5d7@gr.dnszone.top:45500?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-2472ms-VLESS",
+    "latency": 2472,
     "country_code": "DE",
     "country_name": "Germany",
     "isp": "DigitalOcean, LLC"
   },
   {
-    "config": "vless://401374e6-df77-41fb-f638-dad8184f175b@102.177.189.251:443?mode=gun&security=tls&alpn=h2&encryption=none&type=grpc&sni=pqh23v4.hiddendom.shop#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "config": "vless://3f9f37a6-8d0c-4ccc-9449-a533db0eacaa@165.22.76.53:9387?security=none&encryption=none&type=ws#Allnet%20Telegram%3A%40ultrasurf_12",
     "protocol": "vless",
-    "name": "[GB]\ud83c\uddec\ud83c\udde7-2948ms-VLESS",
-    "latency": 2948,
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "isp": "Cloudflare London, LLC"
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-2498ms-VLESS",
+    "latency": 2498,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "isp": "DigitalOcean, LLC"
   },
   {
-    "config": "vless://775152cc-c811-496a-b222-d9764146203f@ipw.gfdv54cvghhgfhgj-njhgj64.info:443?path=%2Fldtzopws&security=tls&encryption=none&host=638896723052890046.dezful-prx-dnraaay.info&type=ws&sni=638896723052890046.dezful-prx-dnraaay.info#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "config": "vless://d03d8815-a06f-408f-a62f-6c84869b96a9@elegant-corporation.seotoolsforyou.co.uk:80?path=%2F&security=none&encryption=none&type=ws#Allnet%20Telegram%3A%40ultrasurf_12",
     "protocol": "vless",
-    "name": "[CA]\ud83c\udde8\ud83c\udde6-2956ms-VLESS",
-    "latency": 2956,
+    "name": "[N/A]\u2753-2516ms-VLESS",
+    "latency": 2516,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vmess://eyJhZGQiOiI5MS4yMjguMTAuMTI1IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjZiODM3ZGRkLTdkZmItNDUyMC1kZDljLTY1ZDYxZDY0MDg5NiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiNDc2ODIiLCJwcyI6IvCfm6HvuI8gQEZyZWFrQ29uZmlnIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
+    "protocol": "vmess",
+    "name": "[GB]\ud83c\uddec\ud83c\udde7-2557ms-VMESS",
+    "latency": 2557,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "isp": "PQ HOSTING PLUS S.R.L."
+  },
+  {
+    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.253:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-2580ms-VLESS",
+    "latency": 2580,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vmess://eyJhZGQiOiIxNzIuNjcuMTMxLjI3IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJyYWsyZDQuODkwNjAwMDQueHl6IiwiaWQiOiIzNTBlMmIwMS1kNDEwLTQ0YTYtOTBiYS02NDgzZjEwNjI5NzIiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjIwNTMiLCJwcyI6IvCfm6HvuI8gQEZyZWFrQ29uZmlnIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6InRscyIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9",
+    "protocol": "vmess",
+    "name": "[N/A]\u2753-2590ms-VMESS",
+    "latency": 2590,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://6b3b071f-096b-4e4c-8d70-0e0b53f27434@www.speedtest.net.cdn.cloudflare.net:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=VAST-RAdIo.zuLAIR.oRG&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-2612ms-VLESS",
+    "latency": 2612,
     "country_code": "CA",
     "country_name": "Canada",
     "isp": "Cloudflare, Inc."
   },
   {
-    "config": "vless://2ac2a3ac-49ec-4cf1-90fd-252b7fad9fbe@51.195.119.204:80?path=%2Fvless%2F&security=&encryption=none&host=---%40External_Net---%40External_Net---%40External_Net---%40External_Net---%40External_Net&type=ws#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "config": "vless://f278037e-ce36-4634-9b4d-fca93e345a35@104.16.228.91:80?path=%2F%40HiByeVPNN%3Fed%3D2560&security=none&encryption=none&host=barayeiran.mahiozonboroon.qzz.io&fp=random&type=ws&sni=barayeiran.mahiozonboroon.qzz.io#Allnet%20Telegram%3A%40ultrasurf_12",
     "protocol": "vless",
-    "name": "[DE]\ud83c\udde9\ud83c\uddea-2995ms-VLESS",
-    "latency": 2995,
+    "name": "[CA]\ud83c\udde8\ud83c\udde6-2620ms-VLESS",
+    "latency": 2620,
+    "country_code": "CA",
+    "country_name": "Canada",
+    "isp": "Cloudflare, Inc."
+  },
+  {
+    "config": "vless://e0408566-637f-4981-b4dd-36be7abc7ae0@ipw.gfdv54cvghhgfhgj-njhgj64.info:443?path=%2Fjoezizws&security=tls&encryption=none&host=638890561652289252.esfahan-prx-dnraaao.info&type=ws&sni=638890561652289252.esfahan-prx-dnraaao.info#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-2629ms-VLESS",
+    "latency": 2629,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://c372b7b3-f0b9-4769-fef8-f2a1e3f293c3@171.22.173.206:28931?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[DE]\ud83c\udde9\ud83c\uddea-2652ms-VLESS",
+    "latency": 2652,
     "country_code": "DE",
     "country_name": "Germany",
-    "isp": "OVH SAS"
+    "isp": "Massivegrid LTD"
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@45.87.175.35:8080#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[N/A]\u2753-2722ms-SS",
+    "latency": 2722,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://633f424e-2b11-48da-a6b3-a849dd71456f@45.12.75.242:26424?security=reality&encryption=none&pbk=l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0&headerType=none&fp=chrome&type=tcp&sni=ya.ru&sid=23103e1e#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[RU]\ud83c\uddf7\ud83c\uddfa-2750ms-VLESS",
+    "latency": 2750,
+    "country_code": "RU",
+    "country_name": "Russia",
+    "isp": "Beget LLC"
+  },
+  {
+    "config": "vless://f278037e-ce36-4634-9b4d-fca93e345a35@104.16.191.195:80?path=%2Fvpnowl-vpnowl-vpnowl-vpnowl%3Fed%3D2560&security=none&encryption=none&host=barayeiran.mahiozonboroon.qzz.io&fp=random&type=ws&sni=barayeiran.mahiozonboroon.qzz.io#Allnet%20Telegram%3A%40ultrasurf_12",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-2814ms-VLESS",
+    "latency": 2814,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "vless://ac083fa9-df9a-4722-b70d-24c17bef0516@185.243.49.205:8444?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[IR]\ud83c\uddee\ud83c\uddf7-2826ms-VLESS",
+    "latency": 2826,
+    "country_code": "IR",
+    "country_name": "Iran",
+    "isp": "Toloe Rayaneh Loghman Educational and Cultural Co."
+  },
+  {
+    "config": "vless://dc58f214-4227-4f58-8090-cbcedf1adeba@holkanas.atroart.ir:25936?security=none&encryption=none&host=canva.com&headerType=http&type=tcp#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "vless",
+    "name": "[N/A]\u2753-2849ms-VLESS",
+    "latency": 2849,
+    "country_code": "N/A",
+    "country_name": "Unknown",
+    "isp": "Unknown ISP"
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@45.139.24.24:57456#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[RU]\ud83c\uddf7\ud83c\uddfa-2942ms-SS",
+    "latency": 2942,
+    "country_code": "RU",
+    "country_name": "Russia",
+    "isp": "Kviktel LLC"
+  },
+  {
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpPanNpSVZaMGU0Y21WUDJQdERqVjd6@45.95.233.46:14123#%F0%9F%9B%A1%EF%B8%8F%20%40FreakConfig",
+    "protocol": "ss",
+    "name": "[FR]\ud83c\uddeb\ud83c\uddf7-2949ms-SS",
+    "latency": 2949,
+    "country_code": "FR",
+    "country_name": "France",
+    "isp": "Global Connectivity Solutions LLP"
   }
 ]
