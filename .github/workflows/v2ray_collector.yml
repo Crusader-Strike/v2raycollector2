@@ -45,16 +45,33 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 5. Set up Xray-core for Validation
-        # This action downloads and sets up the xray binary
-        uses: htr-tech/setup-xray-core@v1.2.0
-        with:
-          version: '1.8.10' # Pinning version for consistency
-          xray-path: '/usr/local/bin' # Makes 'xray' command available globally
+      - name: 5. Manually Install Xray-core
+        run: |
+          echo "Downloading Xray-core..."
+          # Define the version and asset name
+          XRAY_VERSION="1.8.10"
+          ASSET_URL="https://github.com/XTLS/Xray-core/releases/download/v${XRAY_VERSION}/Xray-linux-64.zip"
+          
+          # Download using curl, -L follows redirects
+          curl -L -o xray.zip "${ASSET_URL}"
+          
+          echo "Unzipping Xray-core..."
+          unzip xray.zip
+          
+          echo "Installing Xray-core to /usr/local/bin..."
+          # Move the xray executable to a directory in the system's PATH
+          # sudo is required to write to system directories
+          sudo mv xray /usr/local/bin/xray
+          
+          # Make the binary executable
+          sudo chmod +x /usr/local/bin/xray
+          
+          echo "Xray-core installed successfully:"
+          xray --version
 
       - name: 6. Run the Collector and Validator Script
         run: |
-          # The script will now scrape, validate (simulated), enrich,
+          # The script will now scrape, validate, enrich,
           # and generate all output files including results.json
           python v2ray_collector3.py
 
@@ -67,7 +84,6 @@ jobs:
           git add -A
           
           # Check if there are any changes to commit
-          # The 'git diff-index --quiet HEAD' command exits with 1 if there are changes, 0 otherwise.
           if ! git diff-index --quiet HEAD; then
             echo "Changes found. Committing and pushing..."
             git commit -m "📊 Automated Config Update: $(date -u)"
