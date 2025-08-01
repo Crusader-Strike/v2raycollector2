@@ -144,34 +144,88 @@
             }
             
             function renderCharts(configs) {
+                // Helper function to process data for charts: shows top N items and groups the rest into "Other"
+                const processChartData = (data, topN = 10) => {
+                    // Convert the data object to an array of [key, value] pairs and sort by value (count) descending
+                    const sortedData = Object.entries(data).sort(([, a], [, b]) => b - a);
+                    
+                    const labels = [];
+                    const values = [];
+                    
+                    // Take the top N items
+                    const topItems = sortedData.slice(0, topN);
+                    topItems.forEach(([label, value]) => {
+                        labels.push(label);
+                        values.push(value);
+                    });
+                    
+                    // If there are more items than topN, group the rest into "Other"
+                    if (sortedData.length > topN) {
+                        const otherItems = sortedData.slice(topN);
+                        const otherValue = otherItems.reduce((sum, [, value]) => sum + value, 0);
+                        labels.push("Other");
+                        values.push(otherValue);
+                    }
+                    
+                    return { labels, values };
+                };
+            
+                // --- Country Chart ---
                 const countryData = configs.reduce((acc, c) => {
-                    acc[c.country_name] = (acc[c.country_name] || 0) + 1;
+                    const country = c.country_name || "Unknown";
+                    acc[country] = (acc[country] || 0) + 1;
                     return acc;
                 }, {});
-
-                const protocolData = configs.reduce((acc, c) => {
-                    acc[c.protocol] = (acc[c.protocol] || 0) + 1;
-                    return acc;
-                }, {});
-
+            
+                const processedCountryData = processChartData(countryData, 9); // Show Top 9 countries + "Other"
+            
                 if (countryChart) countryChart.destroy();
                 countryChart = new Chart(document.getElementById('countryChart'), {
                     type: 'doughnut',
                     data: {
-                        labels: Object.keys(countryData),
-                        datasets: [{ data: Object.values(countryData) }]
+                        labels: processedCountryData.labels,
+                        datasets: [{ data: processedCountryData.values }]
                     },
-                    options: { responsive: true, maintainAspectRatio: false }
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'top', // Keep legend manageable
+                            }
+                        }
+                    }
                 });
-
+            
+                // --- Protocol Chart ---
+                // This chart usually has few categories, so we don't need to process it, but we can use the same logic for consistency.
+                const protocolData = configs.reduce((acc, c) => {
+                    acc[c.protocol] = (acc[c.protocol] || 0) + 1;
+                    return acc;
+                }, {});
+                
+                // No need to process protocolData as it usually has few items, but the logic is here if needed.
+                const processedProtocolData = {
+                    labels: Object.keys(protocolData),
+                    values: Object.values(protocolData)
+                };
+            
                 if (protocolChart) protocolChart.destroy();
                 protocolChart = new Chart(document.getElementById('protocolChart'), {
                     type: 'pie',
                     data: {
-                        labels: Object.keys(protocolData),
-                        datasets: [{ data: Object.values(protocolData) }]
+                        labels: processedProtocolData.labels,
+                        datasets: [{ data: processedProtocolData.values }]
                     },
-                    options: { responsive: true, maintainAspectRatio: false }
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            }
+                        }
+                    }
                 });
             }
 
@@ -220,4 +274,5 @@
 </body>
 
 </html>
+
 
