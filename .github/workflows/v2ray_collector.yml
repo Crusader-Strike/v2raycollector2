@@ -1,38 +1,77 @@
-name: V2Ray Config Collector2
+# .github/workflows/v2ray_collector.yml
+name: V2Ray Config Collector & Validator
 
+# Triggers for the workflow
 on:
-  schedule:
-    # Runs every hour
-    - cron: '0 * * * *'
+  # Allows manual triggering from the Actions tab
   workflow_dispatch:
+  
+  # Runs on a schedule (every hour at the 5th minute)
+  schedule:
+    - cron: '5 * * * *'
+    
+  # Runs on pushes to the main branch (e.g., when you update the script)
+  push:
+    branches:
+      - main
+
+# IMPORTANT: Set permissions for the job to allow it to write to the repository
+permissions:
+  contents: write
 
 jobs:
-  build:
+  collect-and-validate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Grant write permissions to the workflow
-
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: 1. Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: 2. Set up Python 3.10
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10' # Ensure this matches your local environment if needed
+          python-version: '3.10'
 
-      - name: Install dependencies
+      - name: 3. Cache Python Dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: 4. Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt --no-cache-dir # Disable cache to ensure fresh install
+          pip install -r requirements.txt
 
-      - name: Run V2Ray Collector
-        run: python v2ray_collector2.py
+      - name: 5. Set up Xray-core for Validation
+        # This action downloads and sets up the xray binary
+        uses: htr-tech/setup-xray-core@v1.2.0
+        with:
+          version: '1.8.10' # Pinning version for consistency
+          xray-path: '/usr/local/bin' # Makes 'xray' command available globally
 
-      - name: Commit and push if changed
+      - name: 6. Run the Collector and Validator Script
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull origin main # Pull latest changes
-          git add -f v2ray_configs/
-          git diff --staged --quiet || (git commit -m "Update V2Ray configs" && git push)
+          # The script will now scrape, validate (simulated), enrich,
+          # and generate all output files including results.json
+          python v2ray_collector.py
+
+      - name: 7. Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Add all new/modified files. -A stages new files, modifications, and deletions.
+          git add -A
+          
+          # Check if there are any changes to commit
+          # The 'git diff-index --quiet HEAD' command exits with 1 if there are changes, 0 otherwise.
+          if ! git diff-index --quiet HEAD; then
+            echo "Changes found. Committing and pushing..."
+            git commit -m "📊 Automated Config Update: $(date -u)"
+            git push
+          else
+            echo "No changes detected. Nothing to commit."
+          fi
