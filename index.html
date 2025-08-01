@@ -16,6 +16,7 @@
         #search { margin-bottom: 1rem; }
         td button { margin: 0; padding: 0.2rem 0.5rem; }
         .copied-feedback { color: var(--pico-color-green-400); font-weight: bold; }
+        .chart-container { position: relative; height: 300px; width: 100%; }
     </style>
 </head>
 <body>
@@ -30,11 +31,15 @@
         <div class="grid">
             <article class="card">
                 <h2>🌍 Configs by Country</h2>
-                <canvas id="countryChart"></canvas>
+                <div class="chart-container">
+                    <canvas id="countryChart"></canvas>
+                </div>
             </article>
             <article class="card">
                 <h2>📊 Configs by Protocol</h2>
-                <canvas id="protocolChart"></canvas>
+                <div class="chart-container">
+                    <canvas id="protocolChart"></canvas>
+                </div>
             </article>
         </div>
 
@@ -122,15 +127,12 @@
                     const row = document.createElement('tr');
                     const flag = config.name.match(/(\p{Emoji})/u)?.[0] || '❓';
                     
-                    // --- FIX START ---
-                    // Helper function for safe Base64 encoding of Unicode strings
                     const b64EncodeUnicode = (str) => {
                         return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (match, p1) => {
                             return String.fromCharCode('0x' + p1);
                         }));
                     };
-                    // --- FIX END ---
-            
+
                     row.innerHTML = `
                         <td>${config.name}</td>
                         <td>${config.protocol}</td>
@@ -144,41 +146,32 @@
             }
             
             function renderCharts(configs) {
-                // Helper function to process data for charts: shows top N items and groups the rest into "Other"
                 const processChartData = (data, topN = 10) => {
-                    // Convert the data object to an array of [key, value] pairs and sort by value (count) descending
                     const sortedData = Object.entries(data).sort(([, a], [, b]) => b - a);
-                    
                     const labels = [];
                     const values = [];
-                    
-                    // Take the top N items
                     const topItems = sortedData.slice(0, topN);
                     topItems.forEach(([label, value]) => {
                         labels.push(label);
                         values.push(value);
                     });
-                    
-                    // If there are more items than topN, group the rest into "Other"
                     if (sortedData.length > topN) {
                         const otherItems = sortedData.slice(topN);
                         const otherValue = otherItems.reduce((sum, [, value]) => sum + value, 0);
                         labels.push("Other");
                         values.push(otherValue);
                     }
-                    
                     return { labels, values };
                 };
-            
-                // --- Country Chart ---
+
                 const countryData = configs.reduce((acc, c) => {
                     const country = c.country_name || "Unknown";
                     acc[country] = (acc[country] || 0) + 1;
                     return acc;
                 }, {});
-            
-                const processedCountryData = processChartData(countryData, 9); // Show Top 9 countries + "Other"
-            
+
+                const processedCountryData = processChartData(countryData, 9);
+
                 if (countryChart) countryChart.destroy();
                 countryChart = new Chart(document.getElementById('countryChart'), {
                     type: 'doughnut',
@@ -190,26 +183,21 @@
                         responsive: true,
                         maintainAspectRatio: false,
                         plugins: {
-                            legend: {
-                                position: 'top', // Keep legend manageable
-                            }
+                            legend: { position: 'top' }
                         }
                     }
                 });
-            
-                // --- Protocol Chart ---
-                // This chart usually has few categories, so we don't need to process it, but we can use the same logic for consistency.
+
                 const protocolData = configs.reduce((acc, c) => {
                     acc[c.protocol] = (acc[c.protocol] || 0) + 1;
                     return acc;
                 }, {});
                 
-                // No need to process protocolData as it usually has few items, but the logic is here if needed.
                 const processedProtocolData = {
                     labels: Object.keys(protocolData),
                     values: Object.values(protocolData)
                 };
-            
+
                 if (protocolChart) protocolChart.destroy();
                 protocolChart = new Chart(document.getElementById('protocolChart'), {
                     type: 'pie',
@@ -221,9 +209,7 @@
                         responsive: true,
                         maintainAspectRatio: false,
                         plugins: {
-                            legend: {
-                                position: 'top',
-                            }
+                            legend: { position: 'top' }
                         }
                     }
                 });
@@ -244,18 +230,12 @@
             configsTableBody.addEventListener('click', e => {
                 if (e.target.classList.contains('copy-btn')) {
                     const button = e.target;
-            
-                    // --- FIX START ---
-                    // Helper function for safe Base64 decoding of Unicode strings
                     const b64DecodeUnicode = (str) => {
                         return decodeURIComponent(atob(str).split('').map((c) => {
                             return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
                         }).join(''));
                     };
-                    
                     const configStr = b64DecodeUnicode(button.dataset.config);
-                    // --- FIX END ---
-            
                     navigator.clipboard.writeText(configStr).then(() => {
                         const originalText = button.textContent;
                         button.textContent = 'Copied!';
@@ -272,7 +252,4 @@
         });
     </script>
 </body>
-
 </html>
-
-
