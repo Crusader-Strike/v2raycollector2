@@ -255,41 +255,75 @@ def validate_and_enrich_config(session: requests.Session, config: str) -> Option
     }
 
 def save_results(results: List[ValidatedConfig]):
-    """Saves the validated and enriched configs to various files."""
+    """
+    Saves the validated configs to JSON and creates subscription files
+    grouped by protocol and by country.
+    """
     if not results:
         logging.info("No valid configs to save.")
+        # Create an empty results file to prevent 404 on the dashboard
+        VALIDATED_DIR.mkdir(exist_ok=True)
+        with open(RESULTS_JSON_FILE, "w", encoding="utf-8") as f:
+            json.dump([], f)
         return
 
     VALIDATED_DIR.mkdir(exist_ok=True)
-
-    # Save detailed results to JSON for the dashboard
+    
+    # --- 1. Save detailed JSON results for the dashboard ---
     with open(RESULTS_JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
     logging.info(f"Saved {len(results)} validated configs to {RESULTS_JSON_FILE}")
 
-    # Group by protocol for subscription files
+    # --- 2. Group by Protocol and save subscription files ---
     grouped_by_protocol: Dict[str, List[str]] = {}
+    all_renamed_configs = []
+    
     for res in results:
         protocol = res["protocol"]
         if protocol not in grouped_by_protocol:
             grouped_by_protocol[protocol] = []
-        # Use the pre-renamed config
-        grouped_by_protocol[protocol].append(res["renamed_config"])
+        
+        # Use the pre-renamed config for subscriptions
+        renamed_config = res.get("renamed_config", res["config"]) # Fallback for safety
+        grouped_by_protocol[protocol].append(renamed_config)
+        all_renamed_configs.append(renamed_config)
     
-    # Save individual subscription files
-    all_renamed_configs = []
+    # Save individual protocol files
     for protocol, configs in grouped_by_protocol.items():
         file_path = VALIDATED_DIR / f"{protocol}.txt"
         with open(file_path, "w", encoding="utf-8") as f:
             f.write("\n".join(configs))
         logging.info(f"Saved {len(configs)} {protocol} configs to {file_path}")
-        all_renamed_configs.extend(configs)
         
-    # Save combined subscription file
+    # Save combined subscription file (all protocols)
     combined_path = VALIDATED_DIR / "subscription.txt"
+    encoded_all = base64.b64encode("\n".join(all_renamed_configs).encode("utf-8")).decode("utf-8")
     with open(combined_path, "w", encoding="utf-8") as f:
-        f.write(base64.b64encode("\n".join(all_renamed_configs).encode("utf-8")).decode("utf-8"))
+        f.write(encoded_all)
     logging.info(f"Saved combined subscription file to {combined_path}")
+
+    # --- 3. Group by Country and save subscription files ---
+    country_dir = VALIDATED_DIR / "by-country"
+    country_dir.mkdir(exist_ok=True)
+    
+    grouped_by_country: Dict[str, List[str]] = {}
+    for res in results:
+        country_code = res.get("country_code", "N/A").upper()
+        if country_code not in grouped_by_country:
+            grouped_by_country[country_code] = []
+        renamed_config = res.get("renamed_config", res["config"])
+        grouped_by_country[country_code].append(renamed_config)
+
+    # Save individual country subscription files
+    for country_code, configs in grouped_by_country.items():
+        if country_code == "N/A":
+            continue # Skip saving a file for unknown countries
+            
+        country_file_path = country_dir / f"{country_code}.txt"
+        encoded_country_configs = base64.b64encode("\n".join(configs).encode("utf-8")).decode("utf-8")
+        with open(country_file_path, "w", encoding="utf-8") as f:
+            f.write(encoded_country_configs)
+        logging.info(f"Saved {len(configs)} configs for country {country_code} to {country_file_path}")
 
 
 # ===== INITIALIZATION & STARTUP =====
@@ -358,3 +392,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
