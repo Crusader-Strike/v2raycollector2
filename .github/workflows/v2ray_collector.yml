@@ -72,11 +72,36 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          
+          # Add all new/modified files. -A stages new files, modifications, and deletions.
           git add -A
+          
+          # Check if there are any changes to commit
           if ! git diff-index --quiet HEAD; then
-            echo "Changes found. Committing and pushing..."
-            git commit -m "📊 Automated Config Update: $(date -u)"
-            git push
+            echo "Changes found. Attempting to commit and push..."
+            
+            # Pull the latest changes from the remote repository before pushing.
+            # --rebase will apply our local commits on top of the remote changes,
+            # which is cleaner than creating a merge commit.
+            # We add a loop for retries in case of concurrent runs.
+            
+            for i in 1 2 3; do
+              echo "Attempt #$i to pull and push..."
+              git pull --rebase
+              
+              # The push might fail if another process pushed in the meantime.
+              if git push; then
+                echo "Push successful on attempt #$i."
+                exit 0 # Exit successfully
+              fi
+              
+              echo "Push failed on attempt #$i. Retrying after a short delay..."
+              sleep 5 # Wait for 5 seconds before retrying
+            done
+            
+            echo "::error::Failed to push changes after multiple attempts."
+            exit 1 # Exit with an error code
+
           else
             echo "No changes detected. Nothing to commit."
           fi
